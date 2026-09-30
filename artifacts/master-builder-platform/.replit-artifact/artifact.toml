@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Master Builder Platform"
+description = "An in-depth construction learning platform rebuilt from the uploaded Master Builder source. It teaches 22 modules through structured lessons, graded quizzes, a final exam, progress tracking, and a completion path for homeowners, students, builders, and project managers."
+version = "1.0.0"
+id = "artifacts/master-builder-platform"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25524
+
+[services.development]
+run = "pnpm --filter @workspace/master-builder-platform run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/master-builder-platform", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/master-builder-platform/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25524"
+BASE_PATH = "/"

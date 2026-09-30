@@ -1,0 +1,473 @@
+======================================================================
+MASTER BUILDER — FINAL EXAM (66 QUESTIONS)
+======================================================================
+
+INSTRUCTIONS FOR WHOEVER IMPORTS THIS:
+This replaces the current final exam question set. It has 66
+questions total — 3 per module across all 22 modules — pulled
+from the same hardened, verified question pool used in the real
+module quizzes. Import exactly as written, do not regenerate or
+rewrite the questions. 75% (50 of 66 correct) should remain the
+pass threshold unless told otherwise.
+
+Q1 (from Module 17: PLUMBING ROUGH-IN & DWV):
+Why can a bigger drain pipe sometimes perform worse than a correctly sized one?
+   A) Bigger drain pipes only underperform if installed with insufficient slope; pipe diameter itself has no effect on solids transport.
+   B) Oversized drain pipes actually improve solids transport by reducing the chance of clogs from reduced cross-sectional area.
+   C) DWV relies on adequate flow velocity to carry solids along with the water; an oversized pipe reduces velocity for the actual flow volume, allowing solids to settle rather than being carried through. [CORRECT ANSWER]
+   D) Pipe diameter only affects venting requirements, not the pipe's ability to carry solids through the drain line.
+
+Q2 (from Module 6: CONCRETE — MIX DESIGN & PLACEMENT):
+Why is 28-day strength the standard benchmark rather than day-1 or day-7?
+   A) Concrete reaches 100% of its final strength at exactly 28 days and gains negligible strength after that point.
+   B) Hydration is time-dependent; concrete reaches roughly 70% of design strength at 7 days and keeps gaining more slowly for months, so 28 days is the standardized comparison point. [CORRECT ANSWER]
+   C) Day-7 strength is actually the industry benchmark; 28-day testing is only used for high-performance concrete mixes.
+   D) 28 days is simply the maximum time concrete can be legally left unloaded under most building codes.
+
+Q3 (from Module 13: WATERPROOFING & BUILDING ENVELOPE):
+Why doesn't stopping bulk water automatically mean an assembly controls air leakage too?
+   A) An assembly that stops bulk water automatically has continuous air barrier performance, since both rely on the same membrane.
+   B) Air leakage is only a concern in commercial buildings; residential wall assemblies don't require a dedicated air barrier.
+   C) Water, air, vapor, and thermal are four separate control problems; air leakage can carry far more moisture into a wall cavity than vapor diffusion alone. [CORRECT ANSWER]
+   D) Bulk water and air leakage are controlled by the exact same layer in a wall assembly, so stopping one always stops the other.
+
+Q4 (from Module 5: FOUNDATIONS — DEEP (PILES, CAISSONS)):
+Why is the gap between drilled-shaft cleanout inspection and concrete placement a critical risk window?
+   A) Cleanout-to-placement delay mainly risks casing corrosion, not soil intrusion, and doesn't affect the shaft's final capacity.
+   B) The main risk during that gap is concrete segregation in the ready-mix truck, not conditions inside the shaft itself.
+   C) Soil can cave or slough into the open shaft during that delay, creating voids or "necking" invisible from the surface once concrete is placed. [CORRECT ANSWER]
+   D) The risk window only matters in cold weather, when the exposed shaft walls can freeze and lose bearing capacity.
+
+Q5 (from Module 19: FIRE PROTECTION SYSTEMS):
+Why does detection speed matter more than raw suppression capacity in fire protection?
+   A) Fire heat release rate grows roughly with the square of time during the growth phase; a fire caught in its incipient stage needs far less suppression and causes far less damage than one allowed to progress toward flashover. [CORRECT ANSWER]
+   B) Suppression capacity is always the dominant factor in fire outcomes; detection speed mainly affects insurance claim processing.
+   C) Fire heat release rate grows linearly with time, which is why detection speed provides only a modest, proportional benefit.
+   D) Detection speed only matters for occupant evacuation time; it has no relationship to how much suppression capacity is ultimately needed.
+
+Q6 (from Module 5: FOUNDATIONS — DEEP (PILES, CAISSONS)):
+What are the two mechanisms by which a pile carries load, and which usually dominates in a long friction pile in sand?
+   A) End bearing and skin friction; a long friction pile in deep sand can derive 80%+ of its capacity from skin friction. [CORRECT ANSWER]
+   B) Skin friction and buoyancy; in saturated sand, buoyant uplift typically provides most of a pile's usable capacity.
+   C) End bearing always dominates regardless of pile length, since skin friction only matters in clay, not sand.
+   D) End bearing and lateral bearing; in sand, lateral bearing dominates because sand offers little skin friction.
+
+Q7 (from Module 13: WATERPROOFING & BUILDING ENVELOPE):
+Why are dampproofing and waterproofing not interchangeable terms below grade?
+   A) The difference between the two is purely about warranty length, not actual moisture or pressure resistance.
+   B) Dampproofing resists soil moisture/vapor only; waterproofing resists sustained hydrostatic pressure, so specifying dampproofing where a high water table creates real hydrostatic pressure is a serious under-specification. [CORRECT ANSWER]
+   C) Waterproofing is only required above grade; below-grade walls rely exclusively on dampproofing regardless of water table.
+   D) Dampproofing and waterproofing are functionally identical below grade; the terms just reflect regional naming conventions.
+
+Q8 (from Module 12: ROOFING SYSTEMS):
+Why is a low-slope membrane roof much less forgiving of a single defect than a shingle roof?
+   A) Membrane roofs have built-in redundant layering identical to shingle systems, so a single defect rarely causes a leak.
+   B) Low-slope membranes must resist standing water indefinitely, and there's no overlapping redundant layer behind a single-ply membrane — one puncture is a direct leak path. [CORRECT ANSWER]
+   C) Low-slope roofs are actually more forgiving, since standing water helps self-seal small punctures over time.
+   D) The forgiveness difference is about UV exposure, not water shedding; membrane roofs simply degrade faster in sunlight.
+
+Q9 (from Module 6: CONCRETE — MIX DESIGN & PLACEMENT):
+What does Abrams' Law say, and why is adding water at the truck a real problem even though the mix "looks fine"?
+   A) Strength is governed primarily by water-to-cement ratio; excess water becomes capillary pore space, silently reducing final strength. [CORRECT ANSWER]
+   B) Added water at the truck is a problem only because it violates delivery ticket documentation, not because it affects strength.
+   C) Abrams' Law relates strength to cement content alone; added water only affects workability, never final strength.
+   D) Abrams' Law applies only to high-strength mixes above 6000 psi; standard mixes are unaffected by added water.
+
+Q10 (from Module 2: SOIL MECHANICS & GEOTECHNICAL INVESTIGATION):
+Why is a boring's stabilized groundwater reading more important than its initial strike reading?
+   A) Initial strike readings measure perched water, while stabilized readings measure a completely separate, deeper aquifer.
+   B) The initial strike reading is always inaccurate due to drilling fluid contamination, regardless of time elapsed.
+   C) Stabilized readings account for barometric pressure changes, which is the only variable that affects true groundwater depth.
+   D) The water level rises to its true resting position over 24+ hours; the initial strike reading understates the table. [CORRECT ANSWER]
+
+Q11 (from Module 2: SOIL MECHANICS & GEOTECHNICAL INVESTIGATION):
+What does a high Plasticity Index (PI > 25) signal, and what failure mode does it cause?
+   A) High-PI clay is expansive, swelling when wetted and shrinking when dried — a moisture-driven volumetric instability, not a bearing collapse. [CORRECT ANSWER]
+   B) High PI indicates a soil is too permeable to retain moisture, causing rapid drainage-related settlement instead.
+   C) High PI signals low bearing capacity specifically, meaning the soil will collapse suddenly under any structural load.
+   D) PI above 25 is only relevant to asphalt subgrade design and has no bearing on foundation soils.
+
+Q12 (from Module 22: PUNCH LIST, COMMISSIONING & HANDOVER):
+Why is "punch list complete" not the same as "building verified functional"?
+   A) Punch list and commissioning are two names for the same closeout process, just used by different trades on a project.
+   B) Commissioning is only required on commercial projects; punch list alone is sufficient verification for residential buildings.
+   C) A completed punch list guarantees commissioning will pass, since punch list items include all major system performance checks.
+   D) Punch list is a visual/functional-existence check; commissioning is systematic performance verification against design intent under real operating conditions, and a system can pass one and fail the other. [CORRECT ANSWER]
+
+Q13 (from Module 14: WINDOWS, DOORS & AIR BARRIERS):
+Why does a sill pan flashing exist even on a "watertight" window?
+   A) Sill pans exist only to catch condensation from the interior glass surface, not exterior wind-driven rain.
+   B) Sill pan flashing is a structural support component for the window frame, unrelated to water management.
+   C) A properly rated "watertight" window makes sill pan flashing unnecessary; it's only required on lower-performance windows.
+   D) Even high-performance windows will pass some water under sufficiently severe wind-driven rain; the sill pan is the engineered drainage path for that expected occasional water passage. [CORRECT ANSWER]
+
+Q14 (from Module 18: HVAC SYSTEMS):
+Why does oversized AC equipment leave a space feeling cold but humid?
+   A) Oversized equipment causes humidity problems because it draws in more outdoor humid air through the return duct than correctly sized units.
+   B) Larger equipment removes humidity faster than smaller units, so oversizing should actually improve dehumidification performance.
+   C) Cold, humid air is a sign of a refrigerant leak, not an equipment sizing issue, regardless of how the unit is sized.
+   D) Latent heat removal (dehumidification) mostly happens during extended coil runtime after the sensible load is satisfied; oversized equipment satisfies the thermostat and cycles off before adequate dehumidification occurs. [CORRECT ANSWER]
+
+Q15 (from Module 8: WOOD FRAMING SYSTEMS):
+Why is sheathing considered a primary structural element rather than just a nailing surface?
+   A) Sheathing only becomes structural once it's glued as well as nailed; nail-only installations are non-structural by code.
+   B) Diaphragm action depends on the plywood's thickness alone; nailing pattern has minimal effect on shear capacity.
+   C) Diaphragm action relies on sheathing acting as a horizontal deep beam transferring lateral load to shear walls; this only works with the specified nailing pattern. [CORRECT ANSWER]
+   D) Sheathing's structural role is limited to resisting gravity loads from foot traffic, not lateral or diaphragm loads.
+
+Q16 (from Module 11: MASONRY & STRUCTURAL BLOCK):
+Why are masonry expansion joints functionally different from concrete control joints?
+   A) Concrete control joints manage shrinkage cracking; clay brick undergoes ongoing, largely irreversible long-term moisture expansion, so masonry joints must accommodate real ongoing growth plus thermal cycling. [CORRECT ANSWER]
+   B) Clay brick shrinks over time similarly to concrete, which is why both material types use joints spaced the same way.
+   C) Expansion joints in masonry exist only to control efflorescence, not to accommodate any physical dimensional change.
+   D) Masonry expansion joints and concrete control joints serve the exact same function; the naming difference is purely regional.
+
+Q17 (from Module 1: SITE PREPARATION & EARTHWORK):
+Why is frost depth a completely separate design check from bearing capacity, rather than something bearing capacity calculations already account for?
+   A) Frost heave is a cyclical volumetric expansion from ice lens formation in frost-susceptible soil, unrelated to whether the soil can support the structural load — a footing can have perfectly adequate bearing capacity and still heave if placed above the code-minimum frost depth. [CORRECT ANSWER]
+   B) Bearing capacity calculations use a winter safety factor of 4 instead of 3, which already covers frost risk.
+   C) Frost heave only matters for soils with cohesion above 15 psf, which is already captured in the c·Nc term.
+   D) Frost depth is actually built into the Nq and Nγ bearing capacity factors for any soil tested below 32°F.
+
+Q18 (from Module 10: STRUCTURAL CONNECTIONS & LOAD PATHS):
+Why are connections, not members, the most common weak link in a structure's load path?
+   A) Members are the more common weak link because mill-certified steel has more variability than field-installed connections.
+   B) Connection failures are rare in practice; most structural failures trace back to undersized primary members.
+   C) Connections concentrate stress into a small area and depend on installation-sensitive details, far more sensitive to error than the bulk material of a beam or column. [CORRECT ANSWER]
+   D) Connections are actually less likely to fail than members, since they're inspected more frequently during construction.
+
+Q19 (from Module 9: STRUCTURAL STEEL ERECTION):
+Why can a partially erected steel frame be unstable even though every individual member meets its final design capacity?
+   A) Partially erected frames are unstable because structural steel loses strength temporarily when exposed to open air before painting.
+   B) If every individual member meets its design capacity, the frame is structurally sound regardless of erection sequence.
+   C) Instability during erection is purely a wind-load issue; once wind speeds are below code minimums, the frame is inherently stable.
+   D) Final lateral stability comes from braced bays, moment connections, and deck diaphragm action working together — during erection, only a fraction of these are in place. [CORRECT ANSWER]
+
+Q20 (from Module 10: STRUCTURAL CONNECTIONS & LOAD PATHS):
+Why does a 3-inch eccentric offset in a beam-to-column connection matter even though it seems minor?
+   A) Eccentric offsets only matter for moment connections; simple shear connections are unaffected by any amount of eccentricity.
+   B) A 3-inch offset is within standard fabrication tolerance and has no measurable structural effect on a simple shear connection.
+   C) The offset primarily affects the connection's fire rating, not its load-carrying capacity.
+   D) An offset force creates an unintended additional moment (force × eccentricity) that a "simple shear" connection wasn't designed to resist. [CORRECT ANSWER]
+
+Q21 (from Module 3: EXCAVATION, SHORING & DEWATERING):
+Why can nearby dewatering cause an old adjacent building to crack even if the shoring wall performs fine?
+   A) Dewatering only affects buildings within the shoring wall's excavation, so an adjacent structure outside it cannot be affected.
+   B) Cracking in adjacent buildings from dewatering is always cosmetic and unrelated to any settlement mechanism.
+   C) Pumping groundwater near an old structure can cause consolidation settlement in that building's own bearing soil, independent of the wall's performance. [CORRECT ANSWER]
+   D) Groundwater pumping affects only the excavation's own foundation design, never surrounding soil beyond the property line.
+
+Q22 (from Module 2: SOIL MECHANICS & GEOTECHNICAL INVESTIGATION):
+What is the effective stress principle, and why does it explain sudden slope failures during heavy rain?
+   A) Heavy rain adds enough total weight to the slope from absorbed water that the total stress alone exceeds capacity.
+   B) Effective stress is the stress measured at the exact moment of failure, so it only applies retroactively during forensic analysis.
+   C) Effective stress only governs granular soils; clay slopes fail during rain purely from surface erosion, not stress changes.
+   D) Shear strength depends on effective stress (total stress minus pore pressure); rising pore pressure during rain lowers it without any new load. [CORRECT ANSWER]
+
+Q23 (from Module 5: FOUNDATIONS — DEEP (PILES, CAISSONS)):
+Why can a pile be damaged during driving without it being obvious in the blow count record?
+   A) Blow count only measures soil resistance, not pile condition, so damage is detected exclusively through post-driving load tests, never blow count patterns.
+   B) Pile damage during driving always shows up immediately as a visible drop in blow count, making it easy to detect in real time.
+   C) Driving stress is uniform along a pile's length regardless of hammer energy, so damage risk doesn't vary with blow count trends.
+   D) Driving stress propagates as a wave (per wave equation analysis); over-driving can crack a pile before it reaches design capacity, and a sudden blow-count change can signal damage or an obstruction. [CORRECT ANSWER]
+
+Q24 (from Module 4: FOUNDATIONS — SHALLOW (FOOTINGS, SLABS)):
+Why is backfilling a foundation wall before the floor diaphragm is installed a common, preventable failure?
+   A) The floor diaphragm braces the top of the wall; backfilling before it's in place leaves unbalanced lateral soil pressure with nothing to resist it at the top. [CORRECT ANSWER]
+   B) The floor diaphragm's role is purely to distribute live load, not to brace the foundation wall laterally.
+   C) Backfilling early is only a problem if the backfill material itself is improperly compacted, regardless of diaphragm timing.
+   D) Foundation walls are designed to resist full lateral soil pressure on their own; the diaphragm only adds a safety margin.
+
+Q25 (from Module 15: INSULATION & THERMAL DESIGN):
+Why is a radiant barrier installed compressed against another material essentially useless?
+   A) Radiant barriers work equally well compressed or with an air gap; the air gap only affects installation labor, not performance.
+   B) Radiant barriers primarily block convective heat transfer, so an air gap is irrelevant to their function.
+   C) Compressing a radiant barrier increases its effectiveness by improving contact conduction with the adjacent material.
+   D) Radiant barriers work by reducing radiant heat transfer across an air space; without an air gap, the reflective mechanism doesn't function. [CORRECT ANSWER]
+
+Q26 (from Module 20: DRYWALL, FRAMING FINISHES & TRIM):
+Why can substituting standard drywall for specified Type X be nearly invisible but still dangerous?
+   A) The difference between standard and Type X drywall is thickness only, and any 5/8" board meets Type X fire performance.
+   B) Type X contains glass fiber reinforcement formulated to resist calcining longer under heat; the substitution looks nearly identical once installed but genuinely reduces the wall's actual fire resistance. [CORRECT ANSWER]
+   C) Type X drywall is a marketing designation with no measurable difference in fire performance from standard drywall.
+   D) Standard drywall and Type X perform identically in fire tests; the Type X designation only affects impact resistance, not fire rating.
+
+Q27 (from Module 8: WOOD FRAMING SYSTEMS):
+Why does an overdriven nail have meaningfully less shear capacity even though it's "installed"?
+   A) Nail depth has no measurable effect on diaphragm performance; only nail spacing and size matter structurally.
+   B) Overdriven nails only reduce withdrawal (pull-out) capacity, not shear capacity, which is unaffected by driving depth.
+   C) An overdriven nail breaks the sheathing face fiber, reducing its effective shear capacity compared to a properly seated nail. [CORRECT ANSWER]
+   D) An overdriven nail actually increases shear capacity by creating a tighter friction fit between the sheathing and framing.
+
+Q28 (from Module 18: HVAC SYSTEMS):
+Why can correctly sized equipment still underperform in the field?
+   A) Correctly sized equipment always performs to spec in the field; underperformance is almost always a refrigerant charge issue.
+   B) Duct static pressure only affects heating performance, not cooling, so correctly sized cooling equipment is unaffected by duct design.
+   C) Field underperformance in correctly sized systems is caused by thermostat calibration error, not duct or airflow issues.
+   D) If the as-built duct system's actual static pressure exceeds the equipment's rated capability, delivered airflow drops below design, even though the equipment itself is correctly sized on paper. [CORRECT ANSWER]
+
+Q29 (from Module 15: INSULATION & THERMAL DESIGN):
+Why is air sealing considered co-equal in importance to insulation R-value, not secondary to it?
+   A) Air sealing matters primarily in hot climates; in cold climates, R-value alone determines the vast majority of performance.
+   B) Air sealing mainly affects indoor air quality; its impact on heating and cooling loads is negligible compared to R-value.
+   C) R-value already accounts for air leakage in its testing methodology, so separate air sealing has limited additional benefit.
+   D) Air leakage can account for 25–40% of a building's total heat loss/gain independent of R-value; a well-insulated but air-leaky building can perform comparably to a poorly insulated one. [CORRECT ANSWER]
+
+Q30 (from Module 14: WINDOWS, DOORS & AIR BARRIERS):
+Why can a window develop frame condensation even in a well-insulated, properly humidified building?
+   A) Condensation on frames is caused by exterior air infiltration through the frame, not by interior surface temperature.
+   B) Well-insulated walls actually increase frame condensation risk by trapping humid air directly against the window frame.
+   C) Frame condensation only occurs when interior humidity exceeds code maximums, regardless of the frame material used.
+   D) Non-thermally-broken metal frames conduct heat readily, dropping the interior frame surface temperature below the dew point even while the insulated wall stays above it. [CORRECT ANSWER]
+
+Q31 (from Module 14: WINDOWS, DOORS & AIR BARRIERS):
+Why does omitting backer rod in a sealant joint cause premature failure?
+   A) Without backer rod, sealant bonds to all three sides of the joint (including the bottom), restricting its ability to stretch and compress with movement. [CORRECT ANSWER]
+   B) Sealant joints fail without backer rod because the joint becomes too shallow to cure properly, not because of three-sided bonding.
+   C) Backer rod is a cosmetic filler used to reduce the amount of sealant needed; its omission has no effect on joint performance.
+   D) Backer rod's main function is UV protection for the sealant; omitting it mainly causes discoloration, not failure.
+
+Q32 (from Module 13: WATERPROOFING & BUILDING ENVELOPE):
+Why can a wall have a perfect vertical waterproofing membrane and still develop moisture problems?
+   A) Capillary action only occurs in wood-framed walls, not concrete or masonry, so this isn't a below-grade concern.
+   B) Capillary action can wick moisture upward through porous concrete/masonry independent of hydrostatic pressure; without a horizontal capillary break at the base, this pathway is unaddressed. [CORRECT ANSWER]
+   C) A perfect vertical membrane eliminates all moisture pathways by definition; remaining problems must trace to a membrane installation defect.
+   D) Moisture problems in that scenario are always from condensation, not capillary wicking, regardless of wall material.
+
+Q33 (from Module 1: SITE PREPARATION & EARTHWORK):
+Why does 30% of a footing's bearing capacity potentially disappear just from a shallow groundwater table, even with identical soil?
+   A) Groundwater dissolves soil cohesion entirely, eliminating the c·Nc term from the bearing equation regardless of soil type.
+   B) Below the water table, buoyant (submerged) unit weight replaces total unit weight in the bearing equation, roughly halving the effective weight term that drives capacity. [CORRECT ANSWER]
+   C) Water tables only affect settlement calculations, not bearing capacity, which is governed solely by the friction angle.
+   D) Groundwater increases total unit weight enough to trigger a mandatory reduction in the safety factor from 3 to 2.
+
+Q34 (from Module 9: STRUCTURAL STEEL ERECTION):
+Why is P-delta especially relevant during the partially-braced erection stage of a tall steel structure?
+   A) P-delta effects only apply once a building is fully occupied and loaded with furniture and equipment, not during erection.
+   B) As the structure deflects laterally, gravity loads acting through that displaced position create additional overturning moment, magnified when the structure is more flexible and only partially braced. [CORRECT ANSWER]
+   C) P-delta effects decrease as a structure becomes more flexible, which is why partially-braced frames are actually safer.
+   D) P-delta is a foundation settlement phenomenon and has no relationship to lateral bracing during steel erection.
+
+Q35 (from Module 16: ELECTRICAL ROUGH-IN & SERVICE):
+Why is grounding without proper bonding still dangerous during a fault?
+   A) A poorly bonded enclosure poses a fire risk but cannot become energized, since grounding alone prevents any shock hazard.
+   B) Bonding only matters for three-phase systems; single-phase residential circuits are safe with grounding alone.
+   C) Grounding alone is always sufficient to clear a fault safely; bonding is a redundant requirement added mainly for inspection purposes.
+   D) Bonding provides the low-impedance path back to the source so a fault trips the overcurrent device quickly; a grounded-but-poorly-bonded enclosure can become and stay energized during a fault. [CORRECT ANSWER]
+
+Q36 (from Module 11: MASONRY & STRUCTURAL BLOCK):
+Why do masonry cleanouts exist, and what happens if grout is placed without inspecting them?
+   A) Cleanouts let inspectors remove mortar droppings and debris that fall into cells; grouting over debris traps a permanent void or obstruction. [CORRECT ANSWER]
+   B) Cleanouts exist solely to verify rebar placement; they have no relationship to mortar droppings or debris removal.
+   C) Cleanouts are required only in seismic design categories; standard masonry walls don't need them at all.
+   D) Grouting without a cleanout inspection is a documentation issue only; it doesn't affect grout consolidation around rebar.
+
+Q37 (from Module 4: FOUNDATIONS — SHALLOW (FOOTINGS, SLABS)):
+Why does punching (two-way) shear usually govern footing thickness more than one-way shear or flexure?
+   A) Footing thickness is set by flexural requirements alone; shear of any kind rarely controls typical footing design.
+   B) Punching shear is easily resolved by adding more longitudinal rebar, the same fix used for one-way shear.
+   C) Punching shear is the column trying to punch a cone-shaped failure surface through the footing — often the controlling case, fixed only by thickness or geometry, not rebar. [CORRECT ANSWER]
+   D) One-way shear always governs footing thickness in practice; punching shear is a secondary check required only for mat foundations.
+
+Q38 (from Module 1: SITE PREPARATION & EARTHWORK):
+Why would using Terzaghi's bearing capacity equation to design a temporary crane pad's subgrade be the wrong method entirely?
+   A) Terzaghi's equation governs footings bearing on soil; temporary access roads and laydown areas are evaluated using CBR (California Bearing Ratio), a different test and design method for pavement-type loading. [CORRECT ANSWER]
+   B) CBR and Terzaghi's method produce identical results for granular soils, so using either is acceptable for any application.
+   C) Crane pads require Terzaghi's equation specifically because outrigger loads are treated as point loads, not distributed loads.
+   D) Terzaghi's equation only applies to soils with a friction angle above 35°, which most crane pad subgrades exceed.
+
+Q39 (from Module 19: FIRE PROTECTION SYSTEMS):
+Why can a sprinkler system that passes routine testing still be inadequate for the space?
+   A) A system that passes routine testing is guaranteed adequate for any occupancy type, since testing verifies flow and pressure universally.
+   B) Sprinkler inadequacy after passing testing is almost always caused by clogged sprinkler heads, not occupancy hazard classification.
+   C) Occupancy hazard classification is checked automatically during every routine sprinkler test, making re-evaluation unnecessary.
+   D) Routine testing verifies the system meets its own original design parameters; if actual occupancy changes to a higher hazard without re-evaluation, the space is under-protected even though the system "passes." [CORRECT ANSWER]
+
+Q40 (from Module 18: HVAC SYSTEMS):
+Why does charging refrigerant "by feel" (sight glass) commonly cause long-term problems that aren't visible at installation?
+   A) Correct charge should be verified against manufacturer superheat/subcooling targets using actual measurements; charging by feel is a common cause of reduced efficiency and premature compressor wear that only appears later. [CORRECT ANSWER]
+   B) Refrigerant charge level has no effect on compressor lifespan; it only affects short-term cooling capacity.
+   C) Sight glass charging is the industry-standard, most accurate method; superheat/subcooling checks are only needed on commercial systems.
+   D) Charging by feel is only a problem with older R-22 systems; modern refrigerants are self-regulating regardless of charge level.
+
+Q41 (from Module 21: FLOORING SYSTEMS):
+Why does replacing cupped wood flooring without fixing the underlying moisture source guarantee a repeat failure?
+   A) Cupping is a cosmetic issue unrelated to moisture; it's caused by subfloor fastener spacing, which replacement corrects.
+   B) Cupping is a symptom of moisture imbalance between the board's top and bottom; replacing the boards without correcting the actual moisture source just resets the same failure mechanism. [CORRECT ANSWER]
+   C) Cupped flooring is caused by manufacturing defects in the specific boards affected, so replacement alone resolves the issue.
+   D) Cupping only recurs if the replacement boards come from the same production lot; different lots are immune to the same moisture conditions.
+
+Q42 (from Module 22: PUNCH LIST, COMMISSIONING & HANDOVER):
+Why is single-season initial commissioning not sufficient on its own?
+   A) Single-season commissioning is sufficient as long as the season chosen represents the historical average temperature for the region.
+   B) HVAC systems perform identically across seasons once initially commissioned; only building envelope systems are season-dependent.
+   C) A system commissioned in mild weather may still fail under actual seasonal extremes it wasn't tested against, which is why post-occupancy/seasonal commissioning is a distinct, necessary step. [CORRECT ANSWER]
+   D) Seasonal commissioning is only relevant for systems without backup power, since weather mainly affects electrical reliability.
+
+Q43 (from Module 12: ROOFING SYSTEMS):
+Why does a steep-slope roof rely on gravity and lapping rather than a sealed membrane?
+   A) Shingle-lap systems shed water by gravity through overlapping courses; below the material's minimum slope rating, water can be driven backward under laps by wind. [CORRECT ANSWER]
+   B) Gravity-based lapping works at any slope, including flat roofs, as long as shingle overlap meets minimum code dimensions.
+   C) Steep-slope roofs use lapping purely for aesthetic reasons; the underlying water resistance comes from the underlayment membrane alone.
+   D) Slope has no bearing on how shingles perform; minimum slope ratings exist only for wind uplift resistance.
+
+Q44 (from Module 17: PLUMBING ROUGH-IN & DWV):
+Why does inadequate venting risk more than just a gurgling noise?
+   A) Venting issues are a code compliance matter only; trap seals are designed to withstand any pressure differential from normal drainage.
+   B) Gurgling noises indicate a full septic tank, not a venting problem, and don't relate to trap seal integrity.
+   C) Inadequate venting primarily causes slow drainage; trap seal loss from siphoning only occurs in commercial plumbing systems.
+   D) Without proper venting, a draining fixture creates a pressure differential that can siphon the water seal out of its own trap or a nearby fixture's trap, which is the only thing blocking sewer gas. [CORRECT ANSWER]
+
+Q45 (from Module 8: WOOD FRAMING SYSTEMS):
+Why do notching/boring limits exist specifically at mid-span of a joist and not at the ends?
+   A) Notching limits exist at mid-span purely for fire-rating reasons, unrelated to the joist's structural capacity.
+   B) Bending stress is actually lowest at mid-span for a simply supported joist, which is why notching is restricted there instead.
+   C) Wood is much weaker perpendicular to grain than parallel to it, and bending stress is highest at mid-span, so notching there cuts across grain exactly where the member is most stressed. [CORRECT ANSWER]
+   D) Mid-span notching is restricted because that's where plumbing and electrical runs are most likely to conflict, not for structural reasons.
+
+Q46 (from Module 11: MASONRY & STRUCTURAL BLOCK):
+Why does a grouted cell with rebar inside provide almost none of its assumed capacity if only partially grouted?
+   A) Rebar in masonry primarily resists compression, so grout coverage matters far less than it does in concrete beams.
+   B) Reinforced masonry's tensile/flexural capacity depends on rebar bonding to surrounding grout; an ungrouted cell gives the rebar nothing to bond to. [CORRECT ANSWER]
+   C) Partially grouted cells still achieve full capacity as long as the rebar itself meets minimum yield strength.
+   D) Partial grouting only reduces a wall's fire rating; its structural bending capacity is unaffected as long as rebar is present.
+
+Q47 (from Module 16: ELECTRICAL ROUGH-IN & SERVICE):
+Why can a circuit pass a basic ampacity check and still cause dimming lights at the far end?
+   A) A circuit that passes ampacity automatically has acceptable voltage drop, since both are calculated from the same wire rating table.
+   B) Voltage drop only becomes a concern on circuits longer than 500 feet; 100 ft runs are unaffected regardless of wire gauge.
+   C) Ampacity and voltage drop are two separate checks; a 100 ft run on 12 AWG can pass ampacity for 20A while showing 6.6% voltage drop, above the 3% guideline. [CORRECT ANSWER]
+   D) Dimming lights at the far end of a circuit indicates a failing breaker, unrelated to ampacity or voltage drop calculations.
+
+Q48 (from Module 4: FOUNDATIONS — SHALLOW (FOOTINGS, SLABS)):
+Why is loss of subgrade support under a slab-on-grade a structural problem, not just a maintenance one?
+   A) Slabs-on-grade are designed to span voids up to 4 feet wide without any structural consequence, by standard practice.
+   B) A slab is a rigid plate relying on uniform support; any void forces it to span an unsupported area, inducing bending stresses it wasn't designed for. [CORRECT ANSWER]
+   C) Subgrade voids are a moisture-intrusion issue first and a structural issue only if they exceed 50% of the slab area.
+   D) Loss of subgrade support only affects the slab's surface flatness (FF/FL numbers), not its structural capacity.
+
+Q49 (from Module 17: PLUMBING ROUGH-IN & DWV):
+Why can an installation pass a casual functional test at rough-in inspection and still violate code?
+   A) Code violations found after a passing functional test are almost always administrative paperwork issues, not physical installation problems.
+   B) Rough-in inspections only check pipe material and joint type; trap-to-vent distance is verified exclusively at final inspection.
+   C) A functional test that passes at rough-in guarantees code compliance, since code requirements are based on single-fixture performance.
+   D) Inspectors check trap-to-vent distance against code tables specifically because functional testing under ideal single-fixture conditions can pass an installation that fails under real multi-fixture, competing-flow use. [CORRECT ANSWER]
+
+Q50 (from Module 20: DRYWALL, FRAMING FINISHES & TRIM):
+Why do back-to-back electrical outlets on the same stud bay undermine a wall's acoustic rating?
+   A) They create a direct, unobstructed sound path through the thin drywall at that single location, a flanking path that bypasses the wall assembly's design intent. [CORRECT ANSWER]
+   B) Sound transmission through electrical boxes is blocked automatically by the outlet cover plate, regardless of box placement.
+   C) Outlets on the same stud bay are a code violation for clearance reasons but have no measurable acoustic effect.
+   D) Back-to-back outlets only affect fire rating, not sound transmission, since electrical boxes are acoustically neutral.
+
+Q51 (from Module 7: CONCRETE — REINFORCEMENT & FORMWORK):
+Why does colder concrete significantly increase lateral formwork pressure at the same pour rate?
+   A) Formwork pressure decreases as temperature drops, since colder concrete sets faster and reduces the fluid pressure phase.
+   B) The temperature effect in ACI 347 only applies to mass concrete pours over 4 feet thick, not typical wall forms.
+   C) ACI 347 pressure calculations don't include a temperature variable; pressure is governed by pour rate and formwork height alone.
+   D) ACI 347's formula includes a temperature term; as concrete temperature drops, calculated pressure rises — roughly 47% higher going from 80°F to 50°F at the same pour rate in the module's example. [CORRECT ANSWER]
+
+Q52 (from Module 3: EXCAVATION, SHORING & DEWATERING):
+What's the difference between a bearing/shear failure and hydraulic heave ("boiling") at an excavation base?
+   A) Adding more shoring wall embedment depth always prevents boiling, since it's fundamentally a lateral pressure problem.
+   B) Boiling only occurs in cohesive clay soils, while bearing failure only occurs in granular sand and gravel.
+   C) Boiling happens when upward seepage force at the base exceeds the submerged soil weight above it — dewatering, not shoring, prevents it. [CORRECT ANSWER]
+   D) Boiling and bearing failure are the same mechanism, just described differently depending on which engineer is reporting it.
+
+Q53 (from Module 9: STRUCTURAL STEEL ERECTION):
+What's the difference between "erection bolts" and final tensioned bolts, and why does this distinction matter?
+   A) The distinction only matters for connections carrying compression loads; tension connections use the same bolt spec throughout.
+   B) Erection bolts are removed entirely once welding is complete, and final bolts are installed fresh at that point.
+   C) Erection bolts and final tensioned bolts are the same fastener; the only difference is the torque wrench setting used to install them.
+   D) Erection bolts are snug-tight for temporary stability during erection; slip-critical or fully tensioned connections must be upgraded to final specified tension. [CORRECT ANSWER]
+
+Q54 (from Module 22: PUNCH LIST, COMMISSIONING & HANDOVER):
+Why does commissioning specifically test system interactions, not just individual systems in isolation?
+   A) Testing system interactions is a redundant step once each individual system has passed its own standalone commissioning test.
+   B) Individual system testing already captures interaction failures, since each system's test includes signals from connected systems.
+   C) Buildings have deeply interconnected systems (fire alarm triggering HVAC shutdown and smoke damper closure, for example); a system that works standalone can still fail its actual integrated sequence of operations. [CORRECT ANSWER]
+   D) System interactions only matter in high-rise buildings; low-rise buildings don't require integrated systems testing.
+
+Q55 (from Module 3: EXCAVATION, SHORING & DEWATERING):
+Why does a shoring wall often show visible deflection before its passive resistance is fully engaged?
+   A) Deflection before full resistance means the wall was undersized and is already failing structurally.
+   B) Passive earth pressure requires far more wall movement to mobilize than active pressure requires to develop. [CORRECT ANSWER]
+   C) Shoring walls are designed to deflect first so the soil can consolidate before any load is applied at all.
+   D) Passive resistance activates instantly at zero deflection; visible movement means the toe embedment has already failed.
+
+Q56 (from Module 6: CONCRETE — MIX DESIGN & PLACEMENT):
+Why does air entrainment matter specifically for freeze-thaw durability, and what's the target range?
+   A) Air entrainment works by reducing the concrete's total water content, which is what actually prevents freeze-thaw damage.
+   B) Air entrainment primarily improves compressive strength; its freeze-thaw benefit is a minor secondary effect.
+   C) The target air content for freeze-thaw durability is 15–20%, well above typical entrainment levels used today.
+   D) Entrained air (typically 4–8%) creates microscopic bubble voids that relieve pressure from freezing water in capillary pores. [CORRECT ANSWER]
+
+Q57 (from Module 15: INSULATION & THERMAL DESIGN):
+Why can a steel-stud wall with R-19 cavity insulation perform far below R-19 in practice?
+   A) Steel studs actually improve thermal performance slightly by reflecting radiant heat back into the cavity.
+   B) The performance gap only occurs in commercial buildings; residential steel-stud walls don't show this thermal bridging effect.
+   C) Steel conducts heat roughly 400+ times more readily than wood, creating a severe thermal bridge through every stud — R-19 nominal can drop to roughly R-6 effective. [CORRECT ANSWER]
+   D) Steel studs have no meaningful effect on thermal performance; the R-19 drop is almost always due to poor insulation installation.
+
+Q58 (from Module 16: ELECTRICAL ROUGH-IN & SERVICE):
+Why does an oversized breaker on an undersized conductor defeat the purpose of overcurrent protection?
+   A) Conductors are rated to handle any breaker size up to 200A regardless of wire gauge, per standard electrical code.
+   B) An oversized breaker is safe as long as the conductor is rated for at least 80% of the breaker's trip rating.
+   C) A breaker protects the conductor, not the connected load; oversizing the breaker without upsizing the conductor allows the conductor to overheat before the breaker trips. [CORRECT ANSWER]
+   D) Breaker sizing has no relationship to conductor protection; breakers exist solely to protect the connected appliance or device.
+
+Q59 (from Module 21: FLOORING SYSTEMS):
+Why can a concrete slab feel completely dry and still fail moisture-sensitive flooring?
+   A) Moisture vapor emission only matters for slabs poured within the last 6 months; older slabs are exempt from testing requirements.
+   B) Tactile dryness and moisture vapor emission rate measure the same thing, just at different points on the slab surface.
+   C) A slab that feels dry to the touch is always dry enough for flooring installation; failures trace to adhesive quality, not slab moisture.
+   D) A slab can be dry to the touch while still emitting moisture vapor at a rate exceeding what many adhesives/materials tolerate, which is why measured RH probe or calcium chloride testing is required. [CORRECT ANSWER]
+
+Q60 (from Module 21: FLOORING SYSTEMS):
+Why must wood flooring be acclimated under actual occupied HVAC conditions, not construction-phase conditions?
+   A) Acclimation timing is a manufacturer warranty formality and has no measurable effect on the flooring's actual performance.
+   B) Acclimation is meant to bring the material to equilibrium moisture content with its real long-term service environment; acclimating under temporary construction heat/no cooling doesn't represent that environment. [CORRECT ANSWER]
+   C) Construction-phase conditions are always more humid than occupied conditions, so acclimating early actually over-prepares the wood.
+   D) Acclimation conditions only matter for engineered flooring, not solid wood, which is unaffected by ambient humidity.
+
+Q61 (from Module 7: CONCRETE — REINFORCEMENT & FORMWORK):
+Why is formwork essentially a pressure vessel design problem rather than just "strong enough wood"?
+   A) Fresh concrete behaves as a fluid at placement, exerting pressure that increases with pour rate and decreases with temperature; formwork failure is almost always a lateral-pressure or tie-spacing error. [CORRECT ANSWER]
+   B) Once concrete begins curing, it exerts zero lateral pressure, so formwork only needs to resist the initial impact of placement.
+   C) Formwork failures are almost always caused by using undersized lumber species, not lateral pressure calculations.
+   D) Formwork pressure is constant regardless of pour rate; only the total concrete volume affects the required form strength.
+
+Q62 (from Module 19: FIRE PROTECTION SYSTEMS):
+Why isn't a generic fire-rated caulk automatically valid for any penetration?
+   A) Firestop product selection only matters for penetrations larger than 6 inches; smaller penetrations use a single universal product.
+   B) Any UL-listed fire-rated caulk is valid for all penetrations regardless of the penetrating item or annular space size.
+   C) Firestop listings are configuration-specific, matched to the exact penetrating item, annular space, and assembly rating; a product used outside its tested configuration doesn't provide its rated performance. [CORRECT ANSWER]
+   D) Fire-rated caulk performance depends only on the caulk's rated hours, not on the specific penetration configuration it's used in.
+
+Q63 (from Module 10: STRUCTURAL CONNECTIONS & LOAD PATHS):
+In the module's uplift load path example, why does the weakest link — not the average — govern the whole chain's capacity?
+   A) Load paths redistribute force away from weak connections automatically, so the average capacity is what actually governs.
+   B) If a truss connector is rated for 3,200 lb but a field-compromised anchor bolt only develops 2,400 lb, the entire path's effective capacity is 2,400 lb. [CORRECT ANSWER]
+   C) The weakest link only governs under seismic loading; wind uplift capacity is based on the strongest connection in the chain.
+   D) Load path capacity is calculated as the average of all connections in the chain, weighted by their individual load ratings.
+
+Q64 (from Module 7: CONCRETE — REINFORCEMENT & FORMWORK):
+What is development length, and why is a lap splice that's "6 inches short" not close enough?
+   A) Development length only applies to compression bars; tension splices have no minimum embedment requirement.
+   B) Development length is a code-minimum spacing requirement between bars, unrelated to how a splice transfers load.
+   C) A splice that's slightly short still develops full strength as long as the concrete around it meets its design f'c.
+   D) Development length is the minimum embedment needed for a bar to reach full design strength via bond stress; a short splice can pull out before reaching yield strength. [CORRECT ANSWER]
+
+Q65 (from Module 12: ROOFING SYSTEMS):
+Why do secondary/overflow drains matter even when primary drains are correctly sized?
+   A) As long as primary drains are correctly sized, overflow drains are a redundant requirement with no real structural purpose.
+   B) Overflow scuppers work identically whether installed at the same height as primary drains or above them.
+   C) They handle the failure case where primary drains clog; without functional overflow drainage set higher than primary drains, ponding water can add unanticipated structural load. [CORRECT ANSWER]
+   D) Overflow drains are a plumbing code requirement unrelated to structural load; their only function is preventing interior water damage.
+
+Q66 (from Module 20: DRYWALL, FRAMING FINISHES & TRIM):
+Why does doubling a wall's mass only provide a 5–6 dB STC improvement instead of doubling sound blocking?
+   A) Doubling mass provides no meaningful STC improvement at all; STC is determined almost entirely by air gap width.
+   B) Mass law is linear, so doubling wall mass should double STC rating, but installation losses typically prevent this in practice.
+   C) STC improvement from added mass depends only on stud spacing, not on the amount of mass added to the wall.
+   D) Mass law is logarithmic, not linear; doubling mass yields a real but modest STC gain, which is why decoupling methods are often recommended over mass alone for substantial improvement. [CORRECT ANSWER]

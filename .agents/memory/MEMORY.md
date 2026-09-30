@@ -1,0 +1,6 @@
+- [Artifact build environment](artifact-build-environment.md) — local production builds require both PORT and BASE_PATH to be supplied.
+- [Paddle Sandbox initialization](paddle-sandbox-initialization.md) — call Paddle.Environment.set('sandbox') before Paddle.Initialize; do not rely on Initialize options alone.
+- [Paddle payment reconciliation](paddle-payment-reconciliation.md) — recover missed webhooks by verifying completed transactions server-side with Paddle and signed account metadata.
+- [Clerk verification flow](clerk-auth-flow.md) — keep custom Clerk router callbacks stable so hosted verification state is not reinitialized during auth updates.
+- [Paid course content protection](paid-course-content-protection.md) — keep lesson and exam content server-gated; never ship the paid curriculum in the public client bundle.
+- [Webhook source IPs on Replit](webhook-source-ips-on-replit.md) — the app sees private proxy addresses, so provider CIDR checks inside Express reject legitimate webhooks.

@@ -1,0 +1,347 @@
+import type { LessonSection, Question, QAReviewItem } from "./course-types";
+
+const module1Source = String.raw`SECTION 1: Core Principles & Engineering Physics/Theory
+
+Site preparation is not "clearing dirt" — it's the engineering control of soil as a structural material before anything is built on it. Everything downstream (foundation performance, settlement, drainage) is set here.
+
+**Bearing capacity theory.** Soil under a foundation fails in one of three modes: general shear failure (stiff/dense soils, sudden catastrophic failure along a well-defined slip surface), local shear failure (medium density, partial slip development), or punching shear failure (loose/soft soils, soil compresses vertically under the footing with no visible surface heave). The governing equation practitioners must internalize is **Terzaghi's bearing capacity equation**:
+
+  q_ult = c·Nc + q·Nq + 0.5·γ·B·Nγ
+
+Where c = cohesion, q = effective overburden pressure at footing depth, γ = unit weight of soil, B = footing width, and Nc, Nq, Nγ are dimensionless bearing capacity factors that scale exponentially with the internal friction angle (φ). This is why a 2° error in your friction angle assumption from a geotechnical report can shift allowable bearing pressure by 20-40% — Nq and Nγ are not linear with φ.
+
+**Compaction physics — the Proctor curve.** When you compact soil, you're forcing air out of the void spaces while water lubricates particle rearrangement. The relationship between moisture content and dry density is not linear — it's a curve that rises, peaks at "optimum moisture content" (OMC), then falls. Below OMC, particles resist sliding past each other (capillary tension holds structure open). Above OMC, water fills voids that could otherwise hold soil particles, and you get a "bearing" effect where compactive energy displaces water instead of densifying soil — this is why over-wet soil "pumps" under a roller instead of compacting.
+
+  γd = γ / (1 + w)
+
+Where γd = dry unit weight, γ = wet (bulk) unit weight, w = moisture content (decimal). Compaction specs are written as % of **Standard Proctor** (ASTM D698, 12,375 ft-lb/ft³ compactive effort) or % of **Modified Proctor** (ASTM D1557, 56,250 ft-lb/ft³) — a 95% Modified Proctor spec is dramatically more stringent than 95% Standard, because Modified establishes a higher maximum dry density baseline. Confusing these two is one of the most expensive documentation errors in earthwork.
+
+**Settlement mechanics.** Two settlement modes matter structurally: immediate (elastic) settlement, which happens as load is applied and is generally small and predictable in granular soils, and **consolidation settlement**, which occurs over months to years in cohesive (clay) soils as pore water is squeezed out under sustained load. Consolidation settlement is governed by the coefficient of consolidation (cv) and compression index (Cc), and it's why a building on clay can show cracking 18 months after occupancy even though it "passed" at turnover — the soil hadn't finished consolidating.
+
+**Why over-excavation and structural fill exist.** If native soil doesn't meet bearing capacity or is expansive (high plasticity clay that swells/shrinks with moisture — see Atterberg limits, plasticity index PI > 15 is a red flag), the engineering solution is to remove it to a specified depth and replace it with engineered fill compacted in lifts, effectively manufacturing a new bearing stratum with known, tested properties instead of trusting variable native soil.
+
+**Effective stress and the water table's hidden effect on bearing capacity.** Terzaghi's equation above assumes a dry or low water table. When groundwater sits within or above the failure zone beneath a footing, you must use **buoyant (submerged) unit weight** instead of total unit weight for any soil below the water table:
+
+  γ' = γsat − γw
+
+Where γsat is the saturated unit weight and γw = 62.4 pcf (water). This roughly halves the effective weight term in the bearing capacity equation for submerged soil — meaning a site with a shallow water table can have allowable bearing pressure 30–50% lower than the same soil dry, even though nothing about the soil particles themselves changed. This is why a geotechnical report's stated groundwater elevation is not a footnote — it can be the single largest variable in the bearing capacity number, and a water table that rises seasonally (common in coastal and low-lying sites) means the *worst-case* seasonal high groundwater elevation, not the elevation on the day of the boring, is what governs design.
+
+**Frost depth and frost heave.** In climates with sustained sub-freezing temperatures, water in soil pore spaces freezes and expands, and in frost-susceptible soils (silts and some clays, per the presence of capillary-active fine particles) this doesn't just expand in place — it draws additional water upward through capillary action to feed ice lens formation, heaving the surface upward non-uniformly. A footing placed above the local frost depth will heave with seasonal freeze-thaw cycles, cracking slabs and racking structures over time even though the soil's bearing capacity was perfectly adequate. This is why every jurisdiction with a frost season publishes a minimum frost depth (footing must bear below this elevation) as a code requirement independent of the bearing capacity calculation entirely — frost depth and bearing capacity are two separate checks, and satisfying one does not satisfy the other.
+
+**California Bearing Ratio (CBR) — the other bearing capacity method.** Terzaghi's method governs footings and foundations; CBR (ASTM D1883) is the dominant method for pavement, access road, and laydown-area subgrade design. CBR expresses subgrade strength as a percentage relative to a standard crushed stone reference (100% CBR). A CBR of 3–5% is common for untreated clay subgrade and requires substantially more granular base course thickness to spread wheel loads than a CBR of 15%+ granular subgrade. Site superintendents often only think of bearing capacity in Terzaghi terms — but temporary access roads, crane pads, and laydown yards are typically designed and evaluated with CBR, not Terzaghi's equation, and using the wrong method for the wrong application is a common estimating and design error.
+
+SECTION 2: Technical Specifications & Material/System Requirements
+
+**Compaction lift thickness (standard practice, verify against project geotech report):**
+- Granular fill: 8–12 inches loose lift thickness before compaction (vibratory roller/plate)
+- Cohesive (clay) fill: 6–8 inches loose lift thickness (sheepsfoot/padfoot roller — kneading action needed for clay, vibratory is ineffective on clay)
+- Under slabs/footings: often reduced to 6-inch lifts near structural elements for QA density testing resolution
+
+**Standard compaction requirements by application (typical, always governed by project geotech report):**
+| Application | % Standard Proctor (ASTM D698) | Notes |
+|---|---|---|
+| Structural fill under footings | 95–98% | Within ±2–3% of OMC |
+| Fill under slab-on-grade | 90–95% | |
+| Utility trench backfill (non-structural) | 90% | |
+| Landscape/non-structural fill | 85–90% | |
+
+**Field density testing:**
+- Nuclear density gauge (ASTM D6938) — most common, fast, requires licensed operator + radioactive source handling protocol
+- Sand cone method (ASTM D1556) — reference method, slower, used to calibrate/verify nuclear gauge
+- Testing frequency: typically 1 test per 2,500–5,000 sf per lift for building pads (verify project spec); every lift, no exceptions on structural fill
+
+**Grading & drainage tolerances:**
+- Finish grade slope away from foundation: minimum 5% (6 in.) fall within first 10 ft per IRC R401.3 / IBC
+- Building pad elevation tolerance: typically ±0.1 ft (1.2 in.) from design grade unless spec states tighter
+- Subgrade tolerance under slabs: ±0.05 ft (¾ in.) typical
+
+**Erosion & sediment control (regulatory floor, not optional):**
+- NPDES/SWPPP required for disturbed area ≥ 1 acre (federal Clean Water Act threshold; many states/municipalities set lower thresholds — always check local)
+- Silt fence, min. 6 in. embedment (toe-in), stakes 6–8 ft O.C., installed on contour
+
+**Expansive soil classification (Unified Soil Classification System context):**
+- Plasticity Index (PI) 0–15: low expansion potential
+- PI 15–25: moderate — often triggers over-excavation/moisture treatment
+- PI > 25: high — typically requires deep foundations, structural fill cap, or moisture barrier + post-tensioned slab design
+
+**Key ASTM/AASHTO test standards referenced across site prep (know these numbers — they appear in every geotech report and spec):**
+| Standard | What it tests |
+|---|---|
+| ASTM D698 | Standard Proctor compaction (moisture-density relationship) |
+| ASTM D1557 | Modified Proctor compaction (higher compactive effort) |
+| ASTM D2216 | Laboratory moisture content determination |
+| ASTM D4318 | Atterberg limits (liquid limit, plastic limit, plasticity index) |
+| ASTM D1883 | California Bearing Ratio (CBR) |
+| ASTM D6938 | Nuclear density gauge field testing |
+| ASTM D1556 | Sand cone field density (reference/calibration method) |
+| AASHTO M147 | Select granular borrow gradation requirements |
+
+**Select fill / structural borrow gradation (typical specification, verify against project-specific spec):**
+Well-graded granular borrow for structural fill typically specifies no more than 15% passing the No. 200 sieve (limiting fines content, since excess fines reduce drainage and increase moisture sensitivity) and a maximum particle size of 3 inches (oversized rock interferes with compaction uniformity and density testing accuracy).
+
+**Frost depth requirements (illustrative — always verify local code; varies significantly by region):**
+| Climate zone (illustrative) | Typical minimum frost depth |
+|---|---|
+| Mild/no-frost regions | 12 in. (frost protection not governing) |
+| Moderate frost regions | 24–36 in. |
+| Severe frost regions (northern US, Canada) | 42–60 in.+ |
+
+**Vibration monitoring near existing structures.** When compacting with vibratory rollers near occupied buildings, underground utilities, or sensitive equipment, Peak Particle Velocity (PPV) limits typically apply — commonly 0.5–2.0 in/sec depending on structure age/sensitivity and local ordinance, monitored with a seismograph. Exceeding these limits risks cosmetic or structural damage claims from adjacent property owners, and vibration monitoring documentation is often what determines liability if a crack claim is filed months later — recording it proactively, not just when someone complains, is the only real protection.
+
+SECTION 3: Step-by-Step Execution Workflow
+
+**Step 0 — Utility locate and potholing (before any ground is disturbed).**
+Call 811 (US) or the local equivalent for a public utility locate, but do not treat the public locate as complete or final — it only covers utilities up to the property line/meter in most cases, and it is frequently inaccurate for depth. For any excavation deeper than a few feet, or in any area with unknown or undocumented private utilities (common on older or previously developed sites), hand-dig or vacuum-excavate (potholing) to physically expose and confirm utility location and depth before mechanical excavation reaches that area.
+*Critical failure point:* Trusting a public locate mark alone and proceeding with mechanical excavation near it. Utility strikes — particularly gas and electrical — are a leading cause of construction fatalities and are almost always preventable with potholing; "the locate didn't show it" is not a defense when it was foreseeable that private, unmapped, or inaccurately marked utilities exist on a site with prior development.
+
+**Step 1 — Pre-construction geotechnical review & survey.**
+Confirm the geotech report boring locations actually cover the building footprint (not just the general parcel). Cross-reference with the civil grading plan. Flag any discrepancy between assumed bearing capacity in structural drawings and the geotech report's *actual* recommended value — this is the single most common paperwork gap that causes RFIs mid-excavation.
+*Critical failure point:* Proceeding on a geotech report where borings don't cover the actual structure location. Soil conditions can vary significantly across a site.
+
+**Step 2 — Clearing & grubbing.**
+Remove vegetation, topsoil, organic material, and root systems to the depth specified (organics left in place decompose, create voids, and cause differential settlement years later — this is a slow, hidden failure mode). Strip topsoil separately and stockpile for later landscape use; it cannot go into structural fill.
+*Critical failure point:* Missing buried organics (old tree root balls, buried debris) below strip depth — always probe/inspect exposed subgrade visually before fill placement begins.
+
+**Step 3 — Establish survey control & benchmarks.**
+Set primary benchmarks off a known datum, tied to the civil grading plan. All subsequent cut/fill and elevation checks reference this.
+*Critical failure point:* A benchmark error here propagates through the entire project — verify against two independent points before beginning cut/fill.
+
+**Step 4 — Cut/fill (mass grading) to rough subgrade.**
+Move earth per the grading plan's cut/fill balance. Where fill is required, proof-roll the exposed native subgrade first (heavy roller or loaded dump truck passes) to identify soft/pumping spots before placing any fill on top of a compromised base.
+*Critical failure point:* Placing engineered fill over an unproofed, unstable native subgrade — you can perfectly compact fill on top of a soft spot and still get catastrophic settlement, because the failure plane is below your compacted layer.
+
+**Step 5 — Engineered fill placement, in lifts.**
+Place fill in the specified loose-lift thickness, moisture-condition to within spec of OMC (add water via water truck + disc, or aerate/dry if too wet — there is no field fix for "too wet" except time and aeration, which is why moisture control during placement, not after, is critical), compact with the appropriate roller for soil type, and field-test density before placing the next lift.
+*Critical failure point:* "Stacking" multiple lifts before testing to save schedule. If a lower lift fails density and three lifts are already on top of it, remediation means removing everything above it.
+
+**Step 6 — Subgrade preparation for foundations/slabs.**
+Fine-grade to tolerance, proof-roll again, verify with density testing at footing/slab elevation specifically (not just at the general pad level).
+*Critical failure point:* Equipment traffic re-disturbing finished subgrade after it's tested and approved — sequence other trades' access around a protected, tested subgrade.
+
+**Step 7 — Erosion control installation & maintenance.**
+Install per SWPPP before/concurrent with grading (not after), inspect after every rain event ≥ 0.5 in., document.
+*Critical failure point:* Treating SWPPP as a one-time install rather than an actively maintained system — this is the #1 source of NOVs (notices of violation) on active sites.
+
+**Step 8 — Dewatering trigger evaluation (if groundwater is encountered).**
+If excavation depth intersects the water table (confirmed either from the geotech boring logs or observed directly during excavation), a decision point occurs: is passive sump-and-pump dewatering sufficient, or does the inflow rate/soil type require active dewatering (wellpoints, deep wells)? This decision should be made by or in consultation with the geotechnical engineer, not decided in the field on schedule pressure alone — undersized dewatering leads to the base heave, sidewall instability, and soil disturbance failure modes covered in Section 4, and these are far more expensive to fix after the fact than to dewater correctly from the start.
+*Critical failure point:* Treating dewatering as a reactive response to "water showing up" rather than a planned system sized against the geotech report's anticipated groundwater conditions before excavation begins.
+
+**Step 9 — Final subgrade documentation and handoff.**
+Before foundation work begins, compile and formally hand off the density test results, proof-roll records, any RFI resolutions, and as-built subgrade elevations to the general contractor and structural engineer of record. This package is the permanent record that the bearing surface met design assumptions — and it is frequently the first (and sometimes only) document requested if a settlement dispute arises years later.
+*Critical failure point:* Treating field test results as informal/verbal confirmations rather than a formal, retained document package. Verbal "it passed" statements from years earlier are worth nothing in a dispute; the paper trail is the actual protection.
+
+SECTION 4: Edge Cases, Troubleshooting & Failure Analysis
+
+**Symptom: Fill won't compact no matter how many roller passes.**
+Diagnosis path: (1) Check moisture — soil above OMC will "pump" (visible deflection/rutting under roller with no density gain) — this is the most common cause. (2) Check if it's the wrong roller for soil type — vibratory drum rollers densify granular soils by particle rearrangement via vibration, but on clay they just bounce off the surface; clay needs a sheepsfoot/padfoot roller that kneads and shears the material. (3) Check lift thickness — if it's too thick, compactive energy doesn't penetrate to the bottom of the lift even though the surface looks compacted.
+Fix: For over-wet soil, discing/aerating and allowing dry-back (weather-dependent, can cost real schedule days — this is why moisture control on placement day matters so much). For wrong equipment, swap roller type. For thick lifts, reduce lift thickness and re-test.
+
+**Symptom: Density test passes at surface but structure shows differential settlement 6–18 months post-completion.**
+Diagnosis path: This is the classic signature of either (a) unproofed soft native subgrade below the tested fill, (b) organic material left in place decomposing, or (c) consolidation settlement in an underlying clay layer that wasn't captured by shallow density testing (density tests typically only verify the top of the lift, not deeper layers). Consolidation settlement in clay is slow and can take years to fully manifest — surface compliance testing does not detect it.
+Fix: This is why the geotech report's settlement analysis (not just bearing capacity) matters, and why deep soil borings under critical structure locations aren't optional on any site with known cohesive soils.
+
+**Symptom: Excavation sidewalls sloughing/collapsing.**
+Diagnosis path: Check actual soil classification against OSHA 1926 Subpart P (Soil Type A/B/C) — many failures happen because the excavation was sloped/shored for an assumed soil type that doesn't match reality, especially after rain saturates a previously "Type A" stiff clay into effectively Type C behavior.
+Fix: Soil type must be re-evaluated after any significant precipitation event or if layered/fissured/previously disturbed soil is encountered — OSHA requires a competent person to make this call daily, not once at project start. This is a life-safety item, not a schedule item — trench collapse is one of the leading causes of construction fatalities.
+
+**Symptom: Grading plan cut/fill quantities don't match what's actually being hauled.**
+Diagnosis path: Check for a "shrinkage/swell factor" error. Soil excavated (in-situ/bank measure) doesn't equal the same volume once compacted as engineered fill — most soils shrink 10-20% when compacted from loose to dense state, but some rock/expansive material swells. If this factor wasn't applied to the earthwork takeoff, cut/fill balance and truck counts will be wrong, sometimes by a lot.
+Fix: Verify the swell/shrinkage factor used in the takeoff against actual soil type — this is a common estimating error that surfaces mid-project as unexplained cost/schedule overruns.
+
+**Symptom: Slab-on-grade or shallow footing shows seasonal cracking/heaving that correlates with winter, not settling over time.**
+Diagnosis path: This is the signature of a footing or slab placed above the local frost depth in a frost-susceptible soil (silt, or clay with significant silt content). Unlike settlement (which is generally progressive and doesn't reverse), frost heave is cyclical — it heaves in winter and may partially relax in summer, repeating annually. Checking whether cracking is seasonal versus one-directional and progressive is the fastest way to distinguish frost heave from settlement.
+Fix: There is no field fix once the footing is placed too shallow — this requires the original design to have specified adequate frost depth, or frost-protected shallow foundation (FPSF) insulation detailing, before construction. This is purely a preventable-at-design-stage failure, which is exactly why frost depth is a code minimum, not an engineering judgment call.
+
+**Symptom: A utility strike occurs during mechanical excavation despite a completed public utility locate.**
+Diagnosis path: Public locates commonly miss private site utilities (irrigation, previous-building service lines, abandoned-but-still-live lines) and can be inaccurate on depth even for located lines. If potholing wasn't performed ahead of mechanical excavation in the affected area, the locate mark alone was relied upon as if it were guaranteed-accurate — which it is not represented to be, even by the utility locate service itself.
+Fix: This is a stop-work, life-safety incident requiring lockout of the affected utility and incident reporting, not a "work around it" field decision. Preventing recurrence means potholing ahead of the mechanical excavation face in any area without confirmed, physically-verified utility depth — this is a workflow gap, not a bad-luck event.
+
+**Symptom: An adjacent property owner files a damage claim after nearby compaction work.**
+Diagnosis path: Without vibration monitoring records, there is no data to confirm whether the compaction activity actually exceeded a damaging PPV threshold or whether the claimed damage (which may be pre-existing cracking) is actually related to the work at all.
+Fix: This is why proactive vibration monitoring — recording continuously during work near existing structures, not only after a complaint — is the only real protection. Retroactive monitoring after a claim is filed proves nothing about conditions during the actual work.
+
+SECTION 5: Real-World Applied Scenarios & Worked Calculations
+
+**Scenario A — Bearing capacity check (simplified Terzaghi, strip footing, cohesionless sand).**
+Given: Footing width B = 2 ft, depth of footing Df = 3 ft, soil unit weight γ = 115 pcf, friction angle φ = 32° (from geotech report).
+For φ = 32°: Nq ≈ 23.2, Nγ ≈ 20.8 (from standard bearing capacity factor tables; these are looked up, not calculated by hand in practice).
+Cohesionless soil → c = 0, so the c·Nc term drops out.
+
+q_ult = q·Nq + 0.5·γ·B·Nγ
+q = γ·Df = 115 × 3 = 345 psf (effective overburden at footing depth)
+q_ult = (345 × 23.2) + (0.5 × 115 × 2 × 20.8)
+q_ult = 8,004 + 2,392 = 10,396 psf ≈ 10.4 ksf
+
+Applying a standard factor of safety of 3 (typical for shallow foundations):
+q_allow = 10,396 / 3 ≈ 3,465 psf ≈ **3.5 ksf allowable bearing pressure**
+
+This is the number you cross-check against the structural drawings' assumed soil bearing value. If the structural engineer designed for 4.0 ksf and your geotech-derived allowable is 3.5 ksf, that's a stop-work RFI, not a field judgment call.
+
+**Scenario B — Compaction moisture correction, water truck calculation.**
+Given: 500 CY of fill to place today, in-place (field) moisture content = 8%, target OMC = 13% (from Proctor curve), soil dry unit weight target γd = 118 pcf.
+
+Water needed per CY:
+Weight of soil per CY (at target dry density) ≈ 118 pcf × 27 ft³/CY = 3,186 lb/CY (dry weight basis)
+Moisture to add = target w − current w = 13% − 8% = 5% = 0.05
+Water weight needed per CY = 3,186 × 0.05 = 159.3 lb/CY
+Water needed for 500 CY = 159.3 × 500 = 79,650 lb
+Convert to gallons (water = 8.34 lb/gal): 79,650 / 8.34 ≈ **9,551 gallons**
+
+At a typical 4,000-gallon water truck capacity, that's roughly **2.4 truck loads** for this lift — and this is why moisture conditioning is scheduled and quantified in advance rather than eyeballed, especially on large pads where under-watering means a failed density test and re-mobilization cost.
+
+**Scenario C — Cut/fill balance with shrinkage factor.**
+Given: Grading plan calls for 10,000 CY of cut (bank/in-situ measure) to be used as fill elsewhere on site. Soil type is silty clay with a typical shrinkage factor of 15% (compacted fill volume is smaller than the same soil's loose bank volume).
+
+Usable compacted fill volume = 10,000 CY × (1 − 0.15) = **8,500 CY of compacted fill**
+
+If the fill area requires 9,200 CY compacted, there's a **700 CY shortfall** that must be imported — a gap that only shows up if the shrinkage factor was applied to the original earthwork takeoff. Missing this is one of the most common causes of "surprise" import/export costs discovered mid-grading rather than in preconstruction estimating.
+
+**Scenario D — Bearing capacity with a shallow groundwater table correction.**
+Given: Same footing as Scenario A (B = 2 ft, Df = 3 ft, φ = 32°, Nq ≈ 23.2, Nγ ≈ 20.8), but the geotech report notes seasonal high groundwater at 2 ft below grade — meaning the water table intersects the bearing zone.
+
+Above water table (0–2 ft): use total unit weight γ = 115 pcf
+Below water table (2–3 ft, and within the B-width influence zone below footing): use buoyant unit weight
+  Assume γsat = 125 pcf → γ' = 125 − 62.4 = 62.6 pcf
+
+Effective overburden at footing depth (accounting for the water table):
+q = (115 × 2) + (62.6 × 1) = 230 + 62.6 = 292.6 psf  [compare to 345 psf dry in Scenario A]
+
+For the 0.5·γ·B·Nγ term, since the influence zone below the footing is now submerged, use γ' = 62.6 pcf instead of 115 pcf:
+q_ult = (292.6 × 23.2) + (0.5 × 62.6 × 2 × 20.8)
+q_ult = 6,788 + 1,302 = 8,090 psf ≈ 8.1 ksf  [compare to 10.4 ksf dry]
+
+q_allow = 8,090 / 3 ≈ **2,697 psf ≈ 2.7 ksf allowable** — roughly 22% lower than the dry-condition calculation in Scenario A, purely because of the water table. This is why "what's the seasonal high groundwater elevation" is one of the first questions to ask when reviewing any geotech report, not an afterthought.
+
+**Scenario E — Frost depth check against footing design.**
+Given: Project is in a moderate frost region with a code-minimum frost depth requirement of 36 inches. Structural drawings show footing bottom at 30 inches below finish grade.
+
+This is a direct code violation regardless of the soil's bearing capacity being otherwise adequate — the footing must bear at or below 36 inches, full stop. The fix is either lowering the footing 6 inches, or providing an engineered frost-protected shallow foundation (FPSF) detail with rigid insulation extending laterally from the footing, sized per the applicable frost-protection design method (e.g., ASCE 32) — a field decision to "leave it at 30 inches, it's probably fine" is not a defensible substitution for either.
+
+**Scenario F — CBR-based access road subgrade check.**
+Given: A temporary crane pad is needed over native silty clay subgrade with a lab-tested CBR of 4%. The crane's outrigger pressure requires a subgrade support equivalent to CBR 15% or better at the surface.
+
+Since native CBR (4%) is well below the required value (15%), the gap must be closed with aggregate base course thickness, not by simply compacting the native soil harder (compaction improves density but does not transform a CBR 4% clay into a CBR 15% material on its own). Typical design charts (e.g., US Army Corps of Engineers or state DOT CBR-based thickness design curves) are used to determine required aggregate thickness for the given CBR gap and anticipated load — this is a separate design process from the structural footing bearing capacity calculations in Scenarios A/D, using different inputs and different governing equations entirely, which is precisely why conflating "bearing capacity" (Terzaghi, for footings) with "subgrade support" (CBR, for pavements/temporary surfaces) is a common and costly error.`;
+
+const sectionHeaders = [
+  "Core Principles & Engineering Physics/Theory",
+  "Technical Specifications & Material/System Requirements",
+  "Step-by-Step Execution Workflow",
+  "Edge Cases, Troubleshooting & Failure Analysis",
+  "Real-World Applied Scenarios & Worked Calculations",
+];
+
+const lessonSections: LessonSection[] = sectionHeaders.map((title, index) => {
+  const start = module1Source.indexOf(`SECTION ${index + 1}: ${title}`);
+  const nextStart =
+    index < sectionHeaders.length - 1
+      ? module1Source.indexOf(`SECTION ${index + 2}:`, start)
+      : module1Source.length;
+  const content = module1Source
+    .slice(start + `SECTION ${index + 1}: ${title}`.length, nextStart)
+    .trim();
+  return { title, content };
+});
+
+const quizSource = String.raw`Q1: Why does 30% of a footing's bearing capacity potentially disappear just from a shallow groundwater table, even with identical soil?
+   A) Below the water table, buoyant (submerged) unit weight replaces total unit weight in the bearing equation, roughly halving the effective weight term that drives capacity. [CORRECT ANSWER]
+   B) Groundwater dissolves soil cohesion entirely, eliminating the c·Nc term from the bearing equation regardless of soil type.
+   C) Water tables only affect settlement calculations, not bearing capacity, which is governed solely by the friction angle.
+   D) Groundwater increases total unit weight enough to trigger a mandatory reduction in the safety factor from 3 to 2.
+
+Q2: Why is frost depth a completely separate design check from bearing capacity, rather than something bearing capacity calculations already account for?
+   A) Frost depth is actually built into the Nq and Nγ bearing capacity factors for any soil tested below 32°F.
+   B) Frost heave is a cyclical volumetric expansion from ice lens formation in frost-susceptible soil, unrelated to whether the soil can support the structural load — a footing can have perfectly adequate bearing capacity and still heave if placed above the code-minimum frost depth. [CORRECT ANSWER]
+   C) Frost heave only matters for soils with cohesion above 15 psf, which is already captured in the c·Nc term.
+   D) Bearing capacity calculations use a winter safety factor of 4 instead of 3, which already covers frost risk.
+
+Q3: Why would using Terzaghi's bearing capacity equation to design a temporary crane pad's subgrade be the wrong method entirely?
+   A) Terzaghi's equation governs footings bearing on soil; temporary access roads and laydown areas are evaluated using CBR (California Bearing Ratio), a different test and design method for pavement-type loading. [CORRECT ANSWER]
+   B) Crane pads require Terzaghi's equation specifically because outrigger loads are treated as point loads, not distributed loads.
+   C) CBR and Terzaghi's method produce identical results for granular soils, so using either is acceptable for any application.
+   D) Terzaghi's equation only applies to soils with a friction angle above 35°, which most crane pad subgrades exceed.
+
+Q4: Why is potholing required even after a public utility locate has been completed and marked?
+   A) Public locates are accurate for depth but not horizontal location, so potholing is only needed to confirm the horizontal position.
+   B) Potholing is a scheduling best practice for efficiency, not a safety requirement, since utility locates are legally guaranteed accurate.
+   C) Public locates commonly miss private, unmapped, or previously-undocumented utilities, and are frequently inaccurate on depth even for lines they do mark — physical verification is the only way to confirm actual location before mechanical excavation. [CORRECT ANSWER]
+   D) Potholing is only required in areas without any utility markings at all; a marked locate is considered fully verified by definition.
+
+Q5: Why should the decision to activate dewatering be made against the geotech report's anticipated groundwater conditions before excavation, rather than reactively once water appears?
+   A) Dewatering system size has no effect on excavation stability; it only affects worker comfort and visibility in the excavation.
+   B) Geotech reports do not typically address groundwater conditions, so dewatering sizing must always be a field-only decision.
+   C) Undersized or late dewatering allows base heave, sidewall instability, and soil disturbance to begin before a system is in place, and these failure modes are far more expensive to correct after the fact than to prevent with a properly sized system from the start. [CORRECT ANSWER]
+   D) Reactive dewatering is equally effective as planned dewatering as long as pumps are mobilized within 24 hours of water appearing.
+
+Q6: Why is retroactive vibration monitoring — installed only after a neighboring property owner files a damage claim — essentially useless as protection?
+   A) PPV limits are only a concern for structures built after 1980, so most damage claims don't require monitoring data at all.
+   B) Vibration monitoring equipment can accurately measure past vibration levels retroactively using soil density readings.
+   C) Retroactive monitoring is fully sufficient as long as it starts within 48 hours of the claim being filed.
+   D) Without continuous monitoring during the actual compaction work, there's no data proving whether the site's activity exceeded a damaging PPV threshold, or whether claimed damage pre-existed the work entirely. [CORRECT ANSWER]
+
+Q7: Why can a 2° error in the assumed soil friction angle shift allowable bearing pressure by 20–40%?
+   A) Bearing capacity is calculated as a simple average of adjacent borings, so one bad reading skews it proportionally.
+   B) Bearing capacity factors (Nq, Nγ) scale exponentially with the friction angle, not linearly. [CORRECT ANSWER]
+   C) Friction angle only affects settlement, not bearing capacity, so the shift comes from a separate load-factor error.
+   D) A 2° error is within standard lab tolerance and shouldn't affect bearing capacity at all.
+
+Q8: Why does 95% Modified Proctor represent a much stricter spec than 95% Standard Proctor?
+   A) Modified Proctor uses the same compactive effort but a smaller mold, so results run about 5% higher automatically.
+   B) Modified Proctor is only used for cohesive clay soils, so the two percentages aren't measuring the same material.
+   C) Standard and Modified Proctor use identical compactive effort; the difference is only in how moisture content is measured.
+   D) Modified Proctor (ASTM D1557) uses far higher compactive effort, so its 100% max density baseline is higher. [CORRECT ANSWER]
+
+Q9: Why can a building on clay crack 18 months after occupancy even though it "passed" at turnover?
+   A) Because clay only settles seasonally with rainfall, so any settlement after turnover is unrelated to the original load.
+   B) Because concrete continues shrinking for up to two years after placement, which is the actual cause of the cracking.
+   C) Because 18 months is exactly when most municipal warranty periods expire, which is when latent defects are first reported.
+   D) Consolidation settlement in cohesive soils happens slowly over months to years as pore water is squeezed out under load, and shallow density testing at turnover doesn't detect this deeper, slow-developing process. [CORRECT ANSWER]
+
+Q10: Why can a grading plan's cut/fill truck count be wrong even when the cut and fill volumes on paper appear balanced?
+   A) This only happens with rock excavation, since soil volume is conserved exactly between cut and fill regardless of compaction.
+   B) Soil shrinks (or occasionally swells) when it goes from loose bank/in-situ volume to compacted fill volume; if this shrinkage/swell factor wasn't applied to the original takeoff, the actual compacted volume available won't match the paper balance. [CORRECT ANSWER]
+   C) Cut and fill volumes are always reported in compacted-equivalent units already, so no conversion factor is ever needed.
+   D) Truck counts are based on truck bed capacity alone and have no relationship to soil volume calculations at all.`;
+
+const questions: Question[] = quizSource
+  .split(/\n\n(?=Q\d+:)/)
+  .map((block) => {
+    const lines = block.split("\n");
+    const prompt = lines[0].replace(/^Q\d+:\s*/, "");
+    const options = lines.slice(1).map((line) => line.replace(/^\s+[A-D]\)\s*/, ""));
+    const correct = options.findIndex((option) => option.endsWith(" [CORRECT ANSWER]"));
+    return {
+      prompt,
+      options: options.map((option) => option.replace(/ \[CORRECT ANSWER\]$/, "")),
+      correct,
+    };
+  });
+
+export const module1QAReview: QAReviewItem[] = [
+  {
+    question:
+      "Why can a 2° error in the assumed soil friction angle shift allowable bearing pressure by 20–40%?",
+    answer:
+      "Because Nq and Nγ in Terzaghi's bearing capacity equation scale exponentially with φ, not linearly — small errors in φ compound into large errors in bearing capacity.",
+  },
+  {
+    question:
+      "Why does 95% Modified Proctor represent a much stricter spec than 95% Standard Proctor?",
+    answer:
+      "Modified Proctor (ASTM D1557) uses far higher compactive effort than Standard (ASTM D698), establishing a higher maximum dry density baseline — so the same percentage represents a denser, stronger fill.",
+  },
+  {
+    question:
+      "Why can a building on clay crack 18 months after occupancy even though it \"passed\" at turnover?",
+    answer:
+      "Consolidation settlement in cohesive soils happens over months to years as pore water is squeezed out under sustained load — it's a slow process that shallow, early testing can't capture.",
+  },
+  {
+    question:
+      "What's the most common, expensive documentation error in earthwork besides moisture control?",
+    answer:
+      "Missing or misapplying the swell/shrinkage factor when converting bank (in-situ) cut volume to compacted fill volume — most soils shrink 10–20% when compacted, throwing off cut/fill balance and truck counts.",
+  },
+];
+
+export const module1LessonSections = lessonSections;
+export const module1Questions = questions;

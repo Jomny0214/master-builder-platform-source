@@ -1,0 +1,35 @@
+modules = ["nodejs-24", "python-base-3.13", "postgresql-16"]
+
+[deployment]
+router = "application"
+deploymentTarget = "autoscale"
+
+[deployment.postBuild]
+args = ["pnpm", "store", "prune"]
+env = { "CI" = "true" }
+
+[workflows]
+runButton = "Project"
+
+[agent]
+stack = "PNPM_WORKSPACE"
+expertMode = true
+
+[postMerge]
+path = "scripts/post-merge.sh"
+timeoutMs = 20000
+
+[nix]
+channel = "stable-25_05"
+
+[userenv]
+
+[userenv.development]
+PADDLE_ENV = "sandbox"
+PADDLE_PRICE_ID = "pri_01m23bss5vp8j3tg5n72erwas2"
+PADDLE_PRODUCT_ID = "pro_01m23bjn578vnnfsy18fhjq2wq"
+
+[userenv.production]
+PADDLE_ENV = "sandbox"
+PADDLE_PRICE_ID = "pri_01m23bss5vp8j3tg5n72erwas2"
+PADDLE_PRODUCT_ID = "pro_01m23bjn578vnnfsy18fhjq2wq"

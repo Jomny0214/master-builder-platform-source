@@ -1,0 +1,627 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "JNJV19VcoQKWEaR17GXbM"
+uri = "file://.conversation/.agents/outputs/Master_Builder_Program_Improved_Presentation.pdf"
+type = "pdf"
+title = "Master Builder Program — Improved Presentation"
+description = "A redesigned 9-page presentation with a cover, seven clearer module pages, system-view diagrams, field-check prompts, and a final technical-use note."
+logical_id = "5601fedd-bc41-4c5e-b007-6666201dd764"
+content_hash = "sha256:286e6a83ee2aaa4ed3616befb4944a83fb6b0657b8b7db3ccfe0692d52152c30"
+size = 55769
+mtime_ms = 1787674841449
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/conversation:fef0bec9-889e-487f-879b-1daa7fb4677c/5601fedd-bc41-4c5e-b007-6666201dd764/06ce979c-1f11-4ea1-b227-dc93e6829608"
+storage_version_token = "1787674866573822"
+content_type = "application/pdf"
+source_uri = "file://.agents/outputs/Master_Builder_Program_Improved_Presentation.pdf"
+
+[[outputs]]
+id = "yRnvk0zur1MwDNqcI80JL"
+uri = "file://attached_assets/generated_audio/vo_01_build_knowledge.mp3"
+type = "audio"
+title = "vo_01_build_knowledge"
+description = "Text-to-speech audio: Build the knowledge... before the building."
+logical_id = "078fbe87-26c6-47f6-8192-e98278dbfdba"
+
+[[outputs]]
+id = "9s33XhQoxFuTagZzPbrx3"
+uri = "file://attached_assets/generated_audio/vo_04_getting.mp3"
+type = "audio"
+title = "vo_04_getting"
+description = "Text-to-speech audio: Here’s what you’re actually getting."
+logical_id = "ba277d06-b5c5-4706-b513-df43c7d3903f"
+
+[[outputs]]
+id = "HIxLacNgJdZzWMvAFbe2A"
+uri = "file://attached_assets/generated_audio/vo_20_theory_math.mp3"
+type = "audio"
+title = "vo_20_theory_math"
+description = "Text-to-speech audio: Real theory. Real math."
+logical_id = "7442bc46-cb31-445e-91d0-4881c79b57e1"
+
+[[outputs]]
+id = "4YxEKGSmpmWwMNAD9i0ua"
+uri = "file://attached_assets/generated_audio/vo_18_modules.mp3"
+type = "audio"
+title = "vo_18_modules"
+description = "Text-to-speech audio: 22 modules. 5 complete build phases."
+logical_id = "7007bb77-d7db-4865-85a7-2d7bb65a43e8"
+
+[[outputs]]
+id = "Kg0iX1thR4SksT1snZ4nu"
+uri = "file://attached_assets/generated_audio/vo_12_decision.mp3"
+type = "audio"
+title = "vo_12_decision"
+description = "Text-to-speech audio: Make the next decision a good one."
+logical_id = "29e2c3ce-f1e4-4ad2-a449-dd812fef55b5"
+
+[[outputs]]
+id = "FCFs_JyiSsX4iAtTdECaR"
+uri = "file://attached_assets/generated_audio/vo_22_quizzes.mp3"
+type = "audio"
+title = "vo_22_quizzes"
+description = "Text-to-speech audio: Quizzes that actually test your skills."
+logical_id = "615edd6b-53dc-47fd-bc14-27d70cbaf6b2"
+
+[[outputs]]
+id = "LjuKyG-d7X9YISCT0umCP"
+uri = "file://attached_assets/generated_audio/vo_24_certificate.mp3"
+type = "audio"
+title = "vo_24_certificate"
+description = "Text-to-speech audio: And a certificate that actually means something."
+logical_id = "ae234e68-cd69-4cf2-9f76-65265b14bfa9"
+
+[[outputs]]
+id = "8CgO_42OLnWP9uCvDZ9wQ"
+uri = "file://attached_assets/generated_audio/sfx_04_ui_slide.mp3"
+type = "audio"
+title = "sfx_04_ui_slide"
+description = "Generated sound effect: Sharp premium digital UI click followed by a very short slide transition whoosh, clean and modern"
+logical_id = "f1b87de7-e3ad-4e33-932c-14f51260f403"
+
+[[outputs]]
+id = "mST6vBkQRw51BS7RSUPQH"
+uri = "file://attached_assets/generated_audio/sfx_01_bass_metal.mp3"
+type = "audio"
+title = "sfx_01_bass_metal"
+description = "Generated sound effect: Deep cinematic sub-bass drop with one restrained heavy metal impact, gritty construction promo, no music, clean short tail"
+logical_id = "95bbcb6c-538f-428c-a202-bf56445a3c7a"
+
+[[outputs]]
+id = "YDvEM5rCzRTGYQZ5mgg32"
+uri = "file://attached_assets/generated_audio/sfx_18_mechanical_tick.mp3"
+type = "audio"
+title = "sfx_18_mechanical_tick"
+description = "Generated sound effect: Single quick precise mechanical tick, industrial tool quality, dry and punchy"
+logical_id = "e21af8f8-3705-4995-aee1-ac07aeb4e860"
+
+[[outputs]]
+id = "INlEk-tX95C4yJrsnwXLa"
+uri = "file://attached_assets/generated_audio/sfx_12_warm_chime.mp3"
+type = "audio"
+title = "sfx_12_warm_chime"
+description = "Generated sound effect: Warm subtle synth hum blooming into a confident understated chime, professional and hopeful"
+logical_id = "ae1d379e-af38-484a-9717-22667dc868d8"
+
+[[outputs]]
+id = "xQgOJ9faGKh9qcOsgtq-g"
+uri = "file://attached_assets/generated_audio/sfx_22_checkmark.mp3"
+type = "audio"
+title = "sfx_22_checkmark"
+description = "Generated sound effect: Crisp digital checkmark confirmation sound, satisfying and restrained, no melody"
+logical_id = "aa7545a4-9f9a-4bd5-bf5f-a85f6d1ba247"
+
+[[outputs]]
+id = "wgn40offIBV5lF1YFzdke"
+uri = "file://attached_assets/generated_audio/sfx_20_ratchet.mp3"
+type = "audio"
+title = "sfx_20_ratchet"
+description = "Generated sound effect: Single subtle heavy-duty ratchet click, industrial metal mechanism, crisp and dry"
+logical_id = "98666428-0906-4a92-9777-f417d8210d34"
+
+[[outputs]]
+id = "0dxWXWNOyzAuYPg2nWYGp"
+uri = "file://attached_assets/generated_audio/sfx_24_swell.mp3"
+type = "audio"
+title = "sfx_24_swell"
+description = "Generated sound effect: Deep resonant cinematic swell, grounded industrial tone, rises gently then fades completely, no melody"
+logical_id = "58fcf29c-5978-4f44-b43e-70688210bd03"
+
+[[outputs]]
+id = "AKbA2BziNky2hwtaz7d1c"
+uri = "file://attached_assets/finished/master-builder-promo-finished.mp4"
+type = "video"
+title = "Master Builder Promo — Finished Mix"
+description = "28.7-second vertical promo with deep professional voiceover, timed construction/UI sound effects, and the original soundtrack mixed underneath."
+logical_id = "4eac45e0-8734-4937-8bdb-24f4cfea6ed6"
+
+[[outputs]]
+id = "GeblMFvAtb7S7tsz8WakV"
+uri = "file://attached_assets/generated_audio/slow_vo_04_getting.mp3"
+type = "audio"
+title = "slow_vo_04_getting"
+description = "Text-to-speech audio: Here’s what you’re actually getting."
+logical_id = "994159a4-a97e-4f3f-978b-5f503a6db163"
+
+[[outputs]]
+id = "Xs48gGQLPvgDdPT1876Cx"
+uri = "file://attached_assets/generated_audio/slow_vo_12_decision.mp3"
+type = "audio"
+title = "slow_vo_12_decision"
+description = "Text-to-speech audio: Make the next decision a good one."
+logical_id = "7d085498-7218-4bfe-8007-5cf39ee8a0f1"
+
+[[outputs]]
+id = "Md6vmCjn3dq-xRsXZBbcl"
+uri = "file://attached_assets/generated_audio/slow_vo_18_modules.mp3"
+type = "audio"
+title = "slow_vo_18_modules"
+description = "Text-to-speech audio: 22 modules. 5 complete build phases."
+logical_id = "820a29cd-c2a5-4ab6-a682-29deee163c03"
+
+[[outputs]]
+id = "6cQOvqL-_e9uTRCdufpU3"
+uri = "file://attached_assets/generated_audio/slow_vo_22_quizzes.mp3"
+type = "audio"
+title = "slow_vo_22_quizzes"
+description = "Text-to-speech audio: Quizzes that actually test your skills."
+logical_id = "3dec1469-e7ce-4b66-8543-fc94a8dbb9e9"
+
+[[outputs]]
+id = "uoJz86zUhhx2jUSX2ReTV"
+uri = "file://attached_assets/generated_audio/slow_vo_01_build_knowledge.mp3"
+type = "audio"
+title = "slow_vo_01_build_knowledge"
+description = "Text-to-speech audio: Build the knowledge... before the building."
+logical_id = "0fae2956-6291-4575-9ed1-67b2f7135bfb"
+
+[[outputs]]
+id = "W9iy59uJOH-0Txq-dj84T"
+uri = "file://attached_assets/generated_audio/slow_vo_20_theory_math.mp3"
+type = "audio"
+title = "slow_vo_20_theory_math"
+description = "Text-to-speech audio: Real theory. Real math."
+logical_id = "27e2844f-07e8-4d7f-8d81-8c08e714b54a"
+
+[[outputs]]
+id = "BWBegNQugmir-AdDCZFFa"
+uri = "file://attached_assets/generated_audio/slow_vo_24_certificate.mp3"
+type = "audio"
+title = "slow_vo_24_certificate"
+description = "Text-to-speech audio: And a certificate that actually means something."
+logical_id = "697aa357-d0ce-4d5c-b4e5-b8cba2308b24"
+
+[[outputs]]
+id = "zDY3xn3TG_9RQsHttjhAn"
+uri = "file://attached_assets/finished/master-builder-promo-slower-voiceover.mp4"
+type = "video"
+title = "Master Builder Promo — Slower Voiceover"
+description = "Revised 28.7-second promo with a slower, more deliberate narration pace and rebalanced timing through the final sequence."
+logical_id = "2c3f5f7b-523b-4ad8-a045-3cacd54d106c"
+content_hash = "sha256:d3c07864bb94b81905bb8a7eb5278957d6819f7d971d595aca2cad7b77ab6c5f"
+size = 1730709
+mtime_ms = 1788647970835
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:6a76d49d-d588-4087-a0e8-52208ed586b2/2c3f5f7b-523b-4ad8-a045-3cacd54d106c/a225ed51-4b3f-4549-aab0-02dc2f79a2e0"
+storage_version_token = "1788647974471957"
+content_type = "video/mp4"
+
+[[outputs]]
+id = "LgrlAFE9CnTQi7ddR2v1_"
+uri = "file://attached_assets/generated_audio/smooth_vo_01_build_knowledge.mp3"
+type = "audio"
+title = "smooth_vo_01_build_knowledge"
+description = "Text-to-speech audio: Build the knowledge... before the building."
+logical_id = "2644bcaa-63aa-4596-a6a6-f80b00f37048"
+
+[[outputs]]
+id = "FzFYXlLv6rDT0E81Y1IH2"
+uri = "file://attached_assets/generated_audio/smooth_vo_04_getting.mp3"
+type = "audio"
+title = "smooth_vo_04_getting"
+description = "Text-to-speech audio: Here’s what you’re actually getting."
+logical_id = "35d123b5-802a-4201-b9f7-ac898c27f2e1"
+
+[[outputs]]
+id = "eJWn8IyHQpTpSVJPwxWMO"
+uri = "file://attached_assets/generated_audio/smooth_vo_18_modules.mp3"
+type = "audio"
+title = "smooth_vo_18_modules"
+description = "Text-to-speech audio: 22 modules. 5 complete build phases."
+logical_id = "1383645c-a6da-4300-a0fe-55bc7e7b9514"
+
+[[outputs]]
+id = "XjFddgfGQUVJREnQGifcI"
+uri = "file://attached_assets/generated_audio/smooth_vo_12_decision.mp3"
+type = "audio"
+title = "smooth_vo_12_decision"
+description = "Text-to-speech audio: Make the next decision a good one."
+logical_id = "5473bb47-acb7-4ee2-8954-f9baabfe6996"
+
+[[outputs]]
+id = "xgvRzRL_n3lyZcxyEYG6A"
+uri = "file://attached_assets/generated_audio/smooth_vo_22_quizzes.mp3"
+type = "audio"
+title = "smooth_vo_22_quizzes"
+description = "Text-to-speech audio: Quizzes that actually test your skills."
+logical_id = "c695d7f3-813a-46f9-8085-c040f4cc64c2"
+
+[[outputs]]
+id = "YsMZzmiPTnJ1tB6Bkbpct"
+uri = "file://attached_assets/generated_audio/smooth_vo_closing_tagline.mp3"
+type = "audio"
+title = "smooth_vo_closing_tagline"
+description = "Text-to-speech audio: Make the next decision... a good one."
+logical_id = "4b4b264b-e8fd-44b5-b1ae-3969356878cc"
+
+[[outputs]]
+id = "FsVNaTzmjj2nnytecvdBd"
+uri = "file://attached_assets/generated_audio/smooth_vo_24_certificate.mp3"
+type = "audio"
+title = "smooth_vo_24_certificate"
+description = "Text-to-speech audio: And a certificate that actually means something."
+logical_id = "9613a492-e534-465b-8e2a-399e42b5b25f"
+
+[[outputs]]
+id = "2euI_UZBxsGd1H98mlEXX"
+uri = "file://attached_assets/generated_audio/smooth_vo_20_theory_math.mp3"
+type = "audio"
+title = "smooth_vo_20_theory_math"
+description = "Text-to-speech audio: Real theory. Real math."
+logical_id = "08dc269f-0e6c-466e-994a-73b0e2aa6fc1"
+
+[[outputs]]
+id = "0P9LQv6JDuJFWMKemHUvS"
+uri = "file://attached_assets/finished/master-builder-promo-smooth-tagline.mp4"
+type = "video"
+title = "Master Builder Promo — Smooth Final Cut"
+description = "33.1-second final promo with smoother narration throughout, softened transitions, and the tagline repeated as closing voiceover and on-screen text."
+logical_id = "ff97ec20-a45b-4ab8-b7d7-9011e23305c9"
+content_hash = "sha256:8e31c888d4d9eaad6a92023439490be522132b219f245bc91efe49de5d3410b4"
+size = 2112327
+mtime_ms = 1788653018860
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:6a76d49d-d588-4087-a0e8-52208ed586b2/ff97ec20-a45b-4ab8-b7d7-9011e23305c9/7a11eaad-f954-4cfe-924d-435ff1e6c6af"
+storage_version_token = "1788653022556996"
+content_type = "video/mp4"
+
+[[outputs]]
+id = "Yo_D3n4tS6VyyICB3ph2n"
+uri = "file://attached_assets/generated_audio/construction_ready_accent.mp3"
+type = "audio"
+title = "construction_ready_accent"
+description = "Generated sound effect: Single confident construction completion accent: heavy timber set into place followed by a subtle metal lock click and short low impact tail. No music, no voices."
+logical_id = "96161f45-d582-4112-bc31-ed289f496e2f"
+
+[[outputs]]
+id = "flsZdXwLA73Mk2pHxw8RH"
+uri = "file://attached_assets/generated_audio/construction_learn_test_prove.mp3"
+type = "audio"
+title = "construction_learn_test_prove"
+description = "Generated sound effect: Three clean sequential workshop sounds with brief spacing: pencil marking wood, metal level clink, then a firm tool case latch. Professional construction training advertisemen…"
+logical_id = "4a5a7ec3-7334-4e65-99df-8ef9e989cbb5"
+
+[[outputs]]
+id = "nXTezbIie8epC1fUeE8aU"
+uri = "file://attached_assets/generated_audio/construction_gap_montage.mp3"
+type = "audio"
+title = "construction_gap_montage"
+description = "Generated sound effect: Rhythmic professional construction-site sound montage: two measured hammer strikes, tape measure snap, short cordless drill burst, and clean timber knock. Gritty but controlle…"
+logical_id = "aafdc84d-a723-4e46-bbfb-7dc53cc124a6"
+
+[[outputs]]
+id = "J58ksn5Liiywf_TLpgph0"
+uri = "file://attached_assets/finished/master-builder-promo-text-construction-sounds.mp4"
+type = "video"
+title = "Master Builder Promo — Enhanced Final Cut"
+description = "33.1-second promo with smoother narration, added benefit text beats, additional construction sounds filling the quiet gaps, and the closing tagline in voice and text."
+logical_id = "dc3364ee-fca9-48a4-925c-869aadb8f4e9"
+content_hash = "sha256:d0d1f0c5324fc8e2f5e8d3cec71aeeea573032f315e015110130b75ee60da21e"
+size = 2125251
+mtime_ms = 1788657299289
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:6a76d49d-d588-4087-a0e8-52208ed586b2/dc3364ee-fca9-48a4-925c-869aadb8f4e9/e3230c4c-bf04-495f-bd94-381bedce032a"
+storage_version_token = "1788657304360882"
+content_type = "video/mp4"
+
+[[outputs]]
+id = "aQs_awerQVTGDIJjBQYCn"
+uri = "file://attached_assets/generated_audio/natural_vo_04_getting.mp3"
+type = "audio"
+title = "natural_vo_04_getting"
+description = "Text-to-speech audio: Here’s what you’re actually getting."
+logical_id = "85411aaa-9157-4ef7-953b-ff34d05a6328"
+
+[[outputs]]
+id = "CP8Q2wwInpL5UBawjNIFw"
+uri = "file://attached_assets/generated_audio/natural_vo_01_build_knowledge.mp3"
+type = "audio"
+title = "natural_vo_01_build_knowledge"
+description = "Text-to-speech audio: Build the knowledge... before the building."
+logical_id = "1d14f65b-38ad-473c-8336-5f4f8a77bb3e"
+
+[[outputs]]
+id = "okJHMReQz5iJlDWBWezuX"
+uri = "file://attached_assets/generated_audio/natural_vo_12_decision.mp3"
+type = "audio"
+title = "natural_vo_12_decision"
+description = "Text-to-speech audio: Make the next decision a good one."
+logical_id = "a626a6ad-f1a5-46bc-8666-669fc5106018"
+
+[[outputs]]
+id = "wmoXE3FpqRGXibUXtVo2j"
+uri = "file://attached_assets/generated_audio/natural_vo_06_bridge.mp3"
+type = "audio"
+title = "natural_vo_06_bridge"
+description = "Text-to-speech audio: You’ll learn to plan the work, read the details, and solve problems before they become expensive."
+logical_id = "c7f32874-16c1-4406-af8f-b7fdbe41a233"
+
+[[outputs]]
+id = "T7HgLrAwJ2uSoVvKUqOs8"
+uri = "file://attached_assets/generated_audio/natural_vo_20_theory_math.mp3"
+type = "audio"
+title = "natural_vo_20_theory_math"
+description = "Text-to-speech audio: Real theory. Real math."
+logical_id = "2645bd65-b0cb-4614-a99a-9cad1dfb6cf4"
+
+[[outputs]]
+id = "swW89-Y0-apI1b_IVXaTf"
+uri = "file://attached_assets/generated_audio/natural_vo_18_modules.mp3"
+type = "audio"
+title = "natural_vo_18_modules"
+description = "Text-to-speech audio: 22 modules. 5 complete build phases."
+logical_id = "08a74006-20de-4ba0-85e9-37520f46f565"
+
+[[outputs]]
+id = "o9Riw2uQCmCLMUw4TgEwH"
+uri = "file://attached_assets/generated_audio/natural_vo_22_quizzes.mp3"
+type = "audio"
+title = "natural_vo_22_quizzes"
+description = "Text-to-speech audio: Quizzes that actually test your skills."
+logical_id = "26101094-ded8-4e67-b796-208c1df2b799"
+
+[[outputs]]
+id = "RjNLuPhoTbqlNIB6dxd4i"
+uri = "file://attached_assets/generated_audio/natural_vo_closing_tagline.mp3"
+type = "audio"
+title = "natural_vo_closing_tagline"
+description = "Text-to-speech audio: Make the next decision... a good one."
+logical_id = "a1f0eb65-3b7b-4f08-bed0-a7b0f1542056"
+
+[[outputs]]
+id = "auaMUyo23hqnxO6K_boti"
+uri = "file://attached_assets/generated_audio/natural_vo_24_certificate.mp3"
+type = "audio"
+title = "natural_vo_24_certificate"
+description = "Text-to-speech audio: And a certificate that actually means something."
+logical_id = "ac5aede1-2d33-4cac-8438-fd002993a8c5"
+
+[[outputs]]
+id = "Yr-ArnAakbgd2iAWp-sHM"
+uri = "file://attached_assets/finished/master-builder-promo-natural-fluid.mp4"
+type = "video"
+title = "Master Builder Promo — Natural Fluid Voiceover"
+description = "33.1-second revised promo with a more conversational narrator, continuous 6–12 second voiceover, construction accents, benefit text, and the closing tagline."
+logical_id = "e2cbe065-246a-4764-ada9-2e1e89bd506d"
+content_hash = "sha256:752a3b1010a0d74a1de84c10687a1a5a4327c5ec993ea1ec451c7c0068a06b78"
+size = 2139967
+mtime_ms = 1788660938085
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:6a76d49d-d588-4087-a0e8-52208ed586b2/e2cbe065-246a-4764-ada9-2e1e89bd506d/73746a1a-9e83-4f4b-b370-e42c4c1d5b07"
+storage_version_token = "1788660942012525"
+content_type = "video/mp4"
+
+[[outputs]]
+id = "wbQkTuHRB89TQadkTnnab"
+uri = "file://attached_assets/generated_audio/human_vo_04_getting.mp3"
+type = "audio"
+title = "human_vo_04_getting"
+description = "Text-to-speech audio: Here’s what you’re actually getting..."
+logical_id = "485ec8bc-d062-41c3-9365-269522ee7a63"
+
+[[outputs]]
+id = "QaZKYpjZeuqEXmcGZZ41P"
+uri = "file://attached_assets/generated_audio/human_vo_01_build_knowledge.mp3"
+type = "audio"
+title = "human_vo_01_build_knowledge"
+description = "Text-to-speech audio: Build the knowledge... before the building."
+logical_id = "c57e01ec-9f21-448a-98a0-f2b0552209e7"
+
+[[outputs]]
+id = "JpOgABxkRYU8og4bg8Z22"
+uri = "file://attached_assets/generated_audio/human_vo_12_decision.mp3"
+type = "audio"
+title = "human_vo_12_decision"
+description = "Text-to-speech audio: Make the next decision... a good one."
+logical_id = "400a446a-97ea-4a57-9869-501ba84947ea"
+
+[[outputs]]
+id = "3pyiWF05gVTKamfHV0zdD"
+uri = "file://attached_assets/generated_audio/human_vo_20_theory_math.mp3"
+type = "audio"
+title = "human_vo_20_theory_math"
+description = "Text-to-speech audio: Real theory. Real math."
+logical_id = "f3d52ced-d031-4dc0-bc3d-93e914530e28"
+
+[[outputs]]
+id = "tLlRWH3a9zj2FMjovpjhL"
+uri = "file://attached_assets/generated_audio/human_vo_06_bridge.mp3"
+type = "audio"
+title = "human_vo_06_bridge"
+description = "Text-to-speech audio: You’ll learn to plan the work, read the details... and solve problems before they become expensive."
+logical_id = "6a93d485-d009-45f6-af95-84fdba9d0c75"
+
+[[outputs]]
+id = "g1KSkLXYqSRiAJCAiMfe9"
+uri = "file://attached_assets/generated_audio/human_vo_18_modules.mp3"
+type = "audio"
+title = "human_vo_18_modules"
+description = "Text-to-speech audio: Twenty-two modules... across five complete build phases."
+logical_id = "c03bc6dd-ddc6-4d8e-83c9-5fe704b868c3"
+
+[[outputs]]
+id = "yq62dywOpctunRkVwf2OY"
+uri = "file://attached_assets/generated_audio/human_vo_24_certificate.mp3"
+type = "audio"
+title = "human_vo_24_certificate"
+description = "Text-to-speech audio: And a certificate... that actually means something."
+logical_id = "d8d71dec-753d-4f45-a036-a79121b49944"
+
+[[outputs]]
+id = "B-asQrtpbEJeopdBkPnxH"
+uri = "file://attached_assets/generated_audio/human_vo_22_quizzes.mp3"
+type = "audio"
+title = "human_vo_22_quizzes"
+description = "Text-to-speech audio: Quizzes that actually test your skills."
+logical_id = "70bf4745-1f49-4c3e-96e9-24e1cfa57ed1"
+
+[[outputs]]
+id = "SR9QPm2NUMt52v--fL2lJ"
+uri = "file://attached_assets/generated_audio/human_vo_closing_tagline.mp3"
+type = "audio"
+title = "human_vo_closing_tagline"
+description = "Text-to-speech audio: Make the next decision... a good one."
+logical_id = "f033a69d-e3af-4918-b38d-cc36ab272940"
+
+[[outputs]]
+id = "ik3JMpmwDMqXt0xD8mmKj"
+uri = "file://attached_assets/finished/master-builder-promo-more-human.mp4"
+type = "video"
+title = "Master Builder Promo — More Human Voice"
+description = "33.1-second promo with a warmer, more conversational narrator, softer phrase endings, continuous 6–12 second narration, construction accents, and the closing tagline."
+logical_id = "82850d81-2c4c-4373-9d03-0da269519ad7"
+content_hash = "sha256:44009884078ca81c575eb1a1d234d284f2757db629979c8a8eef09ad933d5af6"
+size = 2129943
+mtime_ms = 1788661208790
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:6a76d49d-d588-4087-a0e8-52208ed586b2/82850d81-2c4c-4373-9d03-0da269519ad7/888b0a7c-4cee-4261-a49e-46ea1421d837"
+storage_version_token = "1788661212906988"
+content_type = "video/mp4"
+
+[[outputs]]
+id = "ThTkW9o0eWQV4jENxZwnF"
+uri = "file://attached_assets/generated_audio/aligned_01_hook.mp3"
+type = "audio"
+title = "aligned_01_hook"
+description = "Text-to-speech audio: Build the knowledge... before the building."
+logical_id = "b741f951-6c6e-44ba-a48d-a893242cea5b"
+
+[[outputs]]
+id = "hgypCkootrWBkhACB08_V"
+uri = "file://attached_assets/generated_audio/aligned_085_plan.mp3"
+type = "audio"
+title = "aligned_085_plan"
+description = "Text-to-speech audio: Plan with confidence."
+logical_id = "e3a9368a-850c-4239-9758-7a70681814a1"
+
+[[outputs]]
+id = "heciq0T3BchutSwZ_oanX"
+uri = "file://attached_assets/generated_audio/aligned_04_bridge.mp3"
+type = "audio"
+title = "aligned_04_bridge"
+description = "Text-to-speech audio: Interactive training... built directly for the jobsite."
+logical_id = "74c6d9c8-8e41-457a-9618-ef0b64008574"
+
+[[outputs]]
+id = "HqumKhZB2HzNzvl_ouCKA"
+uri = "file://attached_assets/generated_audio/aligned_07_jobsite.mp3"
+type = "audio"
+title = "aligned_07_jobsite"
+description = "Text-to-speech audio: Built for the jobsite."
+logical_id = "710be1df-b081-4cab-bb47-d77c3f236b19"
+
+[[outputs]]
+id = "iTnQjzSDkHbENMFSNz7qK"
+uri = "file://attached_assets/generated_audio/aligned_10_solve.mp3"
+type = "audio"
+title = "aligned_10_solve"
+description = "Text-to-speech audio: Solve problems... before they become expensive."
+logical_id = "d2191d5b-50ec-4265-912a-80f4afb2a1ab"
+
+[[outputs]]
+id = "E2j50DCx8qy1zYJfncGeR"
+uri = "file://attached_assets/generated_audio/aligned_14_learn.mp3"
+type = "audio"
+title = "aligned_14_learn"
+description = "Text-to-speech audio: Learn it."
+logical_id = "e4062d8d-d623-4102-81b4-09c54bac7939"
+
+[[outputs]]
+id = "ukmp1RBYJrD2wj6wY97qJ"
+uri = "file://attached_assets/generated_audio/aligned_15_test.mp3"
+type = "audio"
+title = "aligned_15_test"
+description = "Text-to-speech audio: Test it."
+logical_id = "7392eb0d-7385-437f-9764-cad2bd61622e"
+
+[[outputs]]
+id = "x3vuhsmPoaXw_zCFSU29W"
+uri = "file://attached_assets/generated_audio/aligned_20_quizzes.mp3"
+type = "audio"
+title = "aligned_20_quizzes"
+description = "Text-to-speech audio: Quizzes that actually test your skills."
+logical_id = "aefa8f17-a9a4-45b8-81a2-54155979a15f"
+
+[[outputs]]
+id = "mmW6VwICDhvfuNXbKnLGz"
+uri = "file://attached_assets/generated_audio/aligned_18_math.mp3"
+type = "audio"
+title = "aligned_18_math"
+description = "Text-to-speech audio: Real theory. Real math."
+logical_id = "aa379230-4076-421b-adb5-8944812ffff8"
+
+[[outputs]]
+id = "dZHlneYOfOY3XqbomY7kY"
+uri = "file://attached_assets/generated_audio/aligned_23_certificate.mp3"
+type = "audio"
+title = "aligned_23_certificate"
+description = "Text-to-speech audio: And a certificate... that actually means something."
+logical_id = "64e67a35-53d8-4d5b-9b5f-65ac8dcc1612"
+
+[[outputs]]
+id = "U0IVgAoUiXetlOaj7GylD"
+uri = "file://attached_assets/generated_audio/aligned_28_signoff.mp3"
+type = "audio"
+title = "aligned_28_signoff"
+description = "Text-to-speech audio: Twenty-two modules. Five phases. Make the next decision... a good one."
+logical_id = "01555663-f004-411a-be36-ba38caea5d30"
+
+[[outputs]]
+id = "gXOQOvuLNLD5l_ViuGSET"
+uri = "file://attached_assets/generated_audio/aligned_16_prove.mp3"
+type = "audio"
+title = "aligned_16_prove"
+description = "Text-to-speech audio: Prove it."
+logical_id = "741f301a-3820-4797-be4a-837406c30da2"
+
+[[outputs]]
+id = "U9N7RUfpCLleDRpebcjdA"
+uri = "file://attached_assets/finished/master-builder-promo-action-plan-final.mp4"
+type = "video"
+title = "Master Builder Promo — Conversion-Aligned Final Cut"
+description = "33.1-second revised promo with synchronized badge narration, smoother natural voice, softened visual transition, improved mockup framing and contrast, and a collision-free unified CTA sign-off."
+logical_id = "93138242-fe26-4698-808d-4df44fcf2498"
+content_hash = "sha256:0875a65b3e4fc35a8dab4264763d3804afb7d0dabe240cbe2084354a0cc68dcc"
+size = 2229467
+mtime_ms = 1788667666177
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:6a76d49d-d588-4087-a0e8-52208ed586b2/93138242-fe26-4698-808d-4df44fcf2498/4bc3e929-1789-4a95-b64c-e79c73009ea6"
+storage_version_token = "1788667673353724"
+content_type = "video/mp4"
+
+[[outputs]]
+id = "DTj5IskpfikAQUtz6DeYe"
+uri = "file://attached_assets/generated_audio/master_builder_interactive_end_tag.mp3"
+type = "audio"
+title = "master_builder_interactive_end_tag"
+description = "Text-to-speech audio: Master Builder Interactive."
+logical_id = "36fd61e8-2133-48bd-a4e9-a0c21ec29d0b"
+
+[[outputs]]
+id = "0fePoWslXBm0QhLF-LPkS"
+uri = "file://attached_assets/finished/master-builder-promo-branded-finish.mp4"
+type = "video"
+title = "Master Builder Interactive — Finished Promo"
+description = "36.3-second finished promo with a clean Master Builder Interactive end card, matching narrated brand tag, and subtle closing chime."
+logical_id = "84af4145-8736-4d9f-9d31-f3608d2b01c9"
+content_hash = "sha256:964e9aebe07e3866aba7fc5525e5f9793aa6ceb861011dbc57486690d9595400"
+size = 2306132
+mtime_ms = 1788669242744
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:6a76d49d-d588-4087-a0e8-52208ed586b2/84af4145-8736-4d9f-9d31-f3608d2b01c9/aaa1ef61-9577-4d3b-80f8-e1dfefc3ebc6"
+storage_version_token = "1788669255841113"
+content_type = "video/mp4"

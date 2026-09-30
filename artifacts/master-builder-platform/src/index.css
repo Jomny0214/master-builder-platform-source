@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --font-sans: var(--app-font-sans);
+  --font-mono: var(--app-font-mono);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: 39 43% 89%;
+  --foreground: 220 28% 15%;
+  --border: 220 28% 15% / 0.12;
+  --input: 220 28% 15% / 0.15;
+  --ring: 20 62% 47%;
+  --card: 40 45% 93%;
+  --card-foreground: 220 28% 15%;
+  --card-border: 220 28% 15% / 0.1;
+  --popover: 40 45% 93%;
+  --popover-foreground: 220 28% 15%;
+  --primary: 20 62% 47%;
+  --primary-foreground: 40 45% 93%;
+  --secondary: 40 42% 85%;
+  --secondary-foreground: 220 28% 15%;
+  --muted: 40 42% 85%;
+  --muted-foreground: 37 13% 32%;
+  --accent: 220 28% 15%;
+  --accent-foreground: 40 45% 93%;
+  --destructive: 3 52% 48%;
+  --destructive-foreground: 40 45% 93%;
+  --app-font-sans: 'Inter', sans-serif;
+  --app-font-mono: 'IBM Plex Mono', monospace;
+  --radius: 1rem;
+  --shadow-sm: 0 2px 0 hsl(220 28% 15% / 0.05), 0 8px 18px hsl(220 28% 15% / 0.04);
+  --shadow-md: 0 3px 0 hsl(220 28% 15% / 0.07), 0 14px 30px hsl(220 28% 15% / 0.06);
+}
+
+.dark {
+  --background: 162 26% 13%;
+  --foreground: 42 34% 93%;
+  --border: 162 15% 26%;
+  --input: 162 15% 26%;
+  --ring: 15 61% 54%;
+  --card: 162 22% 17%;
+  --card-foreground: 42 34% 93%;
+  --card-border: 162 15% 26%;
+  --popover: 162 22% 17%;
+  --popover-foreground: 42 34% 93%;
+  --primary: 15 61% 54%;
+  --primary-foreground: 42 39% 97%;
+  --secondary: 162 15% 26%;
+  --secondary-foreground: 42 34% 93%;
+  --muted: 162 15% 23%;
+  --muted-foreground: 42 15% 68%;
+  --accent: 42 66% 59%;
+  --accent-foreground: 162 26% 13%;
+  --destructive: 3 62% 55%;
+  --destructive-foreground: 42 39% 97%;
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { background: hsl(var(--background)); }
+  body { @apply font-sans antialiased bg-background text-foreground; margin: 0; }
+  button, a, input { -webkit-tap-highlight-color: transparent; }
+}
+
+@layer utilities {
+  .font-display { font-family: 'Sora', sans-serif; }
+  .font-mono { font-family: var(--app-font-mono); }
+  .paper-grid {
+    background-image: none;
+  }
+  .noise::after {
+    display: none;
+  }
+}
+
+/* The original course uses a compact navy / cream / terracotta vocabulary. */
+[class*="bg-[#F4EFE6]"], [class*="bg-[#F8F4ED]"] { background-color: #F7F1E4 !important; }
+[class*="bg-[#F2E8D6]"] { background-color: #F2E8D6 !important; }
+[class*="bg-[#13231F]"], [class*="bg-[#20352D]"] { background-color: #122036 !important; }
+[class*="bg-[#D2643F]"] { background-color: #C1602E !important; }
+[class*="bg-[#D8A84E]"] { background-color: #EADFC8 !important; }
+[class*="bg-[#E8E1D7]"] { background-color: #EADFC8 !important; }
+[class*="bg-[#D6E4D7]"] { background-color: #3E7A52 !important; }
+[class*="bg-[#E2EFE1]"] { background-color: #E4EFE3 !important; }
+[class*="bg-[#F3D6CA]"], [class*="bg-[#F8E9E2]"] { background-color: #F6EDE1 !important; }
+[class*="text-[#13231F]"], [class*="text-[#20352D]"] { color: #122036 !important; }
+[class*="text-[#F4EFE6]"] { color: #F7F1E4 !important; }
+[class*="text-[#D2643F]"], [class*="text-[#B34E30]"] { color: #A94E22 !important; }
+[class*="text-[#D8A84E]"] { color: #C1602E !important; }
+[class*="text-[#517D62]"] { color: #3E7A52 !important; }
+[class*="text-[#78877E]"], [class*="text-[#9FB7A5]"] { color: #5B5648 !important; }
+[class*="text-[#9A988E]"], [class*="text-[#B2A99B]"] { color: #A79C82 !important; }
+[class*="border-[#DDD4C5]"], [class*="border-[#E5DDD0]"], [class*="border-[#CFC5B5]"] { border-color: rgba(18,32,54,.1) !important; }
+[class*="shadow-[4px_4px_0_#13231F]"] { box-shadow: 3px 3px 0 #122036 !important; }
+[class*="shadow-[4px_4px_0_#D8A84E]"] { box-shadow: 3px 3px 0 #C1602E !important; }
+
+button[class*="bg-[#D2643F]"], a[class*="bg-[#D2643F]"] {
+  border-radius: 14px;
+  font-family: 'Sora', sans-serif;
+}
+
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes widthIn { from { transform: scaleX(0); transform-origin: left; } to { transform: scaleX(1); transform-origin: left; } }
+@keyframes pulseLine { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+.animate-rise { animation: rise .55s cubic-bezier(.22,.8,.24,1) both; }
+.animate-width { animation: widthIn .8s cubic-bezier(.22,.8,.24,1) both; }
+.animate-pulse-line { animation: pulseLine 2.8s ease-in-out infinite; }
+.delay-1 { animation-delay: .08s; }
+.delay-2 { animation-delay: .16s; }
+.delay-3 { animation-delay: .24s; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
