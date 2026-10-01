@@ -12,6 +12,9 @@
   "dependencies": {
     "@replit/connectors-sdk": "^0.4.1"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "@clerk/shared"]
+  },
   "devDependencies": {
     "prettier": "^3.9.6",
     "typescript": "~5.9.3"
