@@ -3,5 +3,5 @@ RUN corepack enable && corepack prepare pnpm@10.26.1 --activate
 WORKDIR /app
 COPY . .
 RUN pnpm install --no-frozen-lockfile
-RUN pnpm --filter @workspace/master-builder-platform build
+RUN PORT=3000 pnpm --filter @workspace/master-builder-platform build
 CMD ["sh", "-c", "pnpm --filter @workspace/master-builder-platform exec vite preview --config vite.config.ts --host 0.0.0.0 --port $PORT"]
