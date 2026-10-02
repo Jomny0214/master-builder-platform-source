@@ -460,7 +460,7 @@ export function AuthPage({ mode, basePath }: { mode: AuthMode; basePath: string 
 }
 
 export function AuthCallback() {
-  const { isLoaded, isSignedIn } = useAuth();
+  const { isLoaded, isSignedIn, getToken } = useAuth();
   if (!isLoaded) return <div className="flex min-h-[100dvh] items-center justify-center bg-[#F2E8D6] text-sm text-[#5B5648]">Loading your account…</div>;
   if (isSignedIn) return <Redirect to="/" />;
   return <AuthenticateWithRedirectCallback />;

@@ -291,7 +291,7 @@ function useRequiredCourseContent() {
 }
 
 function CourseProvider({ children }: { children: ReactNode }) {
-  const { isLoaded, isSignedIn } = useAuth();
+  const { isLoaded, isSignedIn, getToken } = useAuth();
   const [access, setAccess] = useState<CourseAccess>({ status: 'loading' });
   const [content, setContent] = useState<CourseContent | null>(null);
   const [progress, setProgress] = useState<Progress>(progressSeed);
@@ -309,7 +309,7 @@ function CourseProvider({ children }: { children: ReactNode }) {
       }
       setAccess({ status: 'loading' });
       try {
-        const accessResponse = await fetch('/api/course/access', { credentials: 'include' });
+        const authToken = await getToken(); const authHeaders: HeadersInit = authToken ? { Authorization: `Bearer ${authToken}` } : {}; const accessResponse = await fetch('/api/course/access', { credentials: 'include', headers: authHeaders });
         if (accessResponse.status === 401) {
           if (!cancelled) setAccess({ status: 'signed-out' });
           return;
@@ -323,10 +323,10 @@ function CourseProvider({ children }: { children: ReactNode }) {
           }
           return;
         }
-        const progressResponse = await fetch('/api/course/progress', { credentials: 'include' });
+        const progressResponse = await fetch('/api/course/progress', { credentials: 'include', headers: authHeaders });
         if (!progressResponse.ok) throw new Error('Unable to load progress');
         const savedProgress = await progressResponse.json() as Progress;
-        const contentResponse = await fetch('/api/course/content', { credentials: 'include' });
+        const contentResponse = await fetch('/api/course/content', { credentials: 'include', headers: authHeaders });
         if (!contentResponse.ok) throw new Error('Unable to load course content');
         const courseContent = await contentResponse.json() as CourseContent;
         if (!cancelled) {
@@ -366,13 +366,13 @@ function CourseProvider({ children }: { children: ReactNode }) {
       if (!response.ok || payload.paid !== true) {
         return { ok: false, error: payload.error || 'That access code is not valid.' };
       }
-      const progressResponse = await fetch('/api/course/progress', { credentials: 'include' });
+      const progressResponse = await fetch('/api/course/progress', { credentials: 'include', headers: authHeaders });
       if (!progressResponse.ok) {
         return { ok: false, error: 'Access was activated, but progress could not be loaded. Refresh and try again.' };
       }
       const savedProgress = await progressResponse.json() as Progress;
       setProgress({ ...progressSeed, ...savedProgress });
-      const contentResponse = await fetch('/api/course/content', { credentials: 'include' });
+      const contentResponse = await fetch('/api/course/content', { credentials: 'include', headers: authHeaders });
       if (!contentResponse.ok) {
         return { ok: false, error: 'Access was activated, but course content could not be loaded. Refresh and try again.' };
       }
@@ -594,14 +594,14 @@ function Paywall() {
 }
 
 function AuthRoute({ children }: { children: ReactNode }) {
-  const { isLoaded, isSignedIn } = useAuth();
+  const { isLoaded, isSignedIn, getToken } = useAuth();
   if (!isLoaded) return <LoadingScreen />;
   if (!isSignedIn) return <Redirect to="/sign-in" />;
   return <>{children}</>;
 }
 
 function PaidRoute({ children }: { children: ReactNode }) {
-  const { isLoaded, isSignedIn } = useAuth();
+  const { isLoaded, isSignedIn, getToken } = useAuth();
   const { access, content, progressLoaded } = useCourse();
   if (!isLoaded || access.status === 'loading') return <LoadingScreen />;
   if (!isSignedIn || access.status === 'signed-out') return <Redirect to="/sign-in" />;
@@ -1105,21 +1105,21 @@ function Profile() {
 }
 
 function SignInPage() {
-  const { isLoaded, isSignedIn } = useAuth();
+  const { isLoaded, isSignedIn, getToken } = useAuth();
   if (!isLoaded) return <LoadingScreen />;
   if (isSignedIn) return <Redirect to="/" />;
   return <AuthPage mode="sign-in" basePath={basePath} />;
 }
 
 function SignUpPage() {
-  const { isLoaded, isSignedIn } = useAuth();
+  const { isLoaded, isSignedIn, getToken } = useAuth();
   if (!isLoaded) return <LoadingScreen />;
   if (isSignedIn) return <Redirect to="/" />;
   return <AuthPage mode="sign-up" basePath={basePath} />;
 }
 
 function HomeRedirect() {
-  const { isLoaded, isSignedIn } = useAuth();
+  const { isLoaded, isSignedIn, getToken } = useAuth();
   const { access } = useCourse();
   if (!isLoaded || (isSignedIn && access.status === 'loading')) return <LoadingScreen />;
   if (!isSignedIn) return <PublicHome />;
