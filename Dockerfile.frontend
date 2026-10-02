@@ -3,5 +3,6 @@ RUN corepack enable && corepack prepare pnpm@10.26.1 --activate
 WORKDIR /app
 COPY . .
 RUN pnpm install --no-frozen-lockfile
-RUN PORT=3000 BASE_PATH=/ NODE_ENV=production pnpm --filter @workspace/master-builder-platform build
+ARG VITE_CLERK_PUBLISHABLE_KEY
+RUN test -n "$VITE_CLERK_PUBLISHABLE_KEY" && PORT=3000 BASE_PATH=/ NODE_ENV=production VITE_CLERK_PUBLISHABLE_KEY="$VITE_CLERK_PUBLISHABLE_KEY" pnpm --filter @workspace/master-builder-platform build
 CMD ["sh", "-c", "BASE_PATH=/ NODE_ENV=production pnpm --filter @workspace/master-builder-platform exec vite preview --config vite.config.ts --host 0.0.0.0 --port $PORT"]
